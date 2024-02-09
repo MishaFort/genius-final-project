@@ -1,0 +1,160 @@
+@font-face {
+  font-display: swap;
+  font-family: "Rowdies";
+  font-weight: 400;
+  src: url("../fonts/rowdies-v17-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("../fonts/roboto-v30-latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+
+:root {
+  --color-primary-light: #ffffff;
+  --color-primary-dark: #181817;
+  --color-secondary-light: #f1f3ff;
+  --color-secondary-dark: #839aa9;
+  --color-brand-normal: #ff9f0e;
+  --color-brand-light: #fcb62a;
+  --color-brand-dark: #ffaa00;
+}
+
+/* Base */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+a {
+  display: inline-block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.section-title {
+  font-family: "Rowdies", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+/* Button */
+.button {
+  padding: 16px 32px;
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-normal);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--color-brand-light);
+}
+
+/* Link */
+.link {
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  line-height: 1.35;
+  text-decoration: none;
+  /* transition: color 0.3s; */
+}
+.link:hover {
+  color: var(--color-brand-normal);
+  font-weight: 700; /*ТАК ВРОДЕ НЕЛЬЗЯ*/
+}
+
+/* Hero section */
+.hero-title {
+  font-size: 72px;
+}
+/* Services section */
+.services-list {
+  color: var(--color-brand-normal); 
+  font-weight: 500;
+  line-height: 1.2;
+}
+.services-end-list {
+  color: var(--color-brand-normal);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* Сustomer section*/
+.customer-name {
+  /* color: var(--color-primary-light); */
+  font-size: 24px;
+  font-weight: 500; /*потом можно и 700 чекнуть*/
+  line-height: 1.2;
+}
+.customer-comment {
+  /* color: var(--color-secondary-light); */
+  font-size: 16px;
+  line-height: 1.2;     /*чекнуть можно ли в артикль запихнуть*/
+}
+
+/* Contact section */
+.contact-comment-text {
+  color: var(--color-secondary-dark);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* Footer */
+.footer-button {
+  padding: 8px 24px;
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-normal);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.footer-button:hover {
+  background-color: var(--color-brand-light);
+}
