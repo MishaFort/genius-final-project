@@ -6,114 +6,228 @@
     <title>DOGclub</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!--                    ХЕДЕР                      -->
-    <header>
-      <a href="/">
-        <img src="./images/logo.svg" alt="Logo 'DOGclub'" />
-      </a>
-      <!--  Svg, img, ALL compress later (especially look at svg) -->
-      <ul>
-        <li><a class="link" href="#less-talk-section">Less talk</a></li>
-        <li><a class="link" href="#services-section">Services category</a></li>
-        <li><a class="link" href="#customer-section">Happy customer</a></li>
-        <li><a class="link" href="#contact-section">Contact</a></li>
-      </ul>
-      <button type="button">
-        <img src="./images/shopping-bag.svg" alt="Shopping bag" />
-      </button>
-      <button class="button" type="button">Contact us</button>
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="/">
+              <img
+                class="header-logo"
+                src="./images/logo.svg"
+                alt="Logo 'DOGclub'"
+              />
+            </a>
+            <ul class="header-menu">
+              <li><a class="link" href="#less-talk-section">Less talk</a></li>
+              <li>
+                <a class="link" href="#services-section">Services category</a>
+              </li>
+              <li>
+                <a class="link" href="#customer-section">Happy customer</a>
+              </li>
+              <li><a class="link" href="#contact-section">Contact</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <div class="header-buttons">
+              <button class="header-shopping-bag-icon" type="button">
+                <svg width="40" height="40">
+                  <use href="./images/icons.svg#icon-shopping-bag"></use>
+                </svg>
+              </button>
+              <button class="button" type="button">Contact us</button>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
     <!--                    МЕЙН                       -->
     <main>
       <!--                   Section 1                       -->
-      <section>
-        <h1 class="section-title hero-title">Taking care for your Smart Dog!</h1>
-        <p>Human–canine bonding is the relationship between dogs and humans</p>
-        <button class="button" type="button">Explore More</button>
-        <img src="./images/hero-title-dog.jpg" alt="Happy dog" />
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-container">
+            <div class="hero-text">
+              <h1 class="section-title hero-title">
+                Taking care for your Smart Dog!
+              </h1>
+              <p class="hero-content">
+                Human–canine bonding is the relationship between dogs and humans
+              </p>
+              <button class="button" type="button">Explore More</button>
+            </div>
+            <div class="hero-dog-image">
+              <img src="./images/hero-title-dog.png" alt="Happy dog" />
+            </div>
+          </div>
+        </div>
       </section>
       <!--                   Section 2                       -->
-      <section
-        id="less-talk-sectionhttps://github.com/genius-space/genius-homework-1"
-      >
-        <img src="./images/less-talk-section-dog.jpg" alt="Happy female dog" />
-        <h2 class="section-title">
-          Less talk <br />
-          and more walk
-        </h2>
-        <p>
-          Sometimes our career, lifestyle, or routines can make it difficult to
-          provide your pet with the recommended amount of exercise that they
-          need. Which is why, it’s okay to use an extra hand in walking dogs so
-          they are in perfect shape, mentally and physically.
-        </p>
-        <button class="button" type="button">Explore More</button>
+      <section class="less-talk-section" id="less-talk-section">
+        <div class="less-talk-container">
+          <img
+            src="./images/less-talk-section-dog.jpg"
+            alt="Happy female dog"
+          />
+          <div>
+            <h2 class="section-title less-talk-title">
+              Less talk <br />
+              and more walk
+            </h2>
+            <p class="less-talk-content">
+              Sometimes our career, lifestyle, or routines can make it difficult
+              to provide your pet with the recommended amount of exercise that
+              they need. Which is why, it’s okay to use an extra hand in walking
+              dogs so they are in perfect shape, mentally and physically.
+            </p>
+            <button class="button" type="button">Explore More</button>
+          </div>
+        </div>
       </section>
       <!--                   Section 3                       -->
-      <section id="services-section">
-        <h2 class="section-title">Services category</h2>
-        <ul class="services-list">
-          <li>Grooming</li>
-          <li>Nutrition</li>
-          <li>Training</li>
-          <li>Bathing</li>
-        </ul>
-        <p class="services-end-list">more services</p>
+      <section class="services-section" id="services-section">
+        <div class="container">
+          <h2 class="services-title section-title centered">
+            Services category
+          </h2>
+          <div class="services-section-container">
+            <ul class="services-list">
+              <li class="services-item">
+                <img
+                  class="services-image"
+                  src="./images/services-grooming.svg"
+                  alt="Grooming"
+                />
+                Grooming
+              </li>
+              <li class="services-item">
+                <img
+                  class="services-image"
+                  src="./images/services-nutrition.svg"
+                  alt="Nutrition"
+                />
+                Nutrition
+              </li>
+              <li class="services-item">
+                <img
+                  class="services-image"
+                  src="./images/services-training.svg"
+                  alt="Training"
+                />
+                Training
+              </li>
+              <li class="services-item">
+                <img
+                  class="services-image"
+                  src="./images/services-bathing.svg"
+                  alt="Bathing"
+                />
+                Bathing
+              </li>
+            </ul>
+            <button class="services-end-list" type="button">
+              <img
+                src="./images/more-services-with-arrow.svg"
+                alt="more services"
+              />
+            </button>
+          </div>
+        </div>
       </section>
       <!--                   Section 4                       -->
-      <section id="customer-section">
-        <h2 class="section-title">Happy customer</h2>
-        <ul>
-          <li>
-            <article>
-              <h3 class="customer-name">Christin & Tom</h3>
-              <p class="customer-comment">
-                Love the overall workout experience!
-              </p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3 class="customer-name">Anna & Tobby</h3>
-              <p class="customer-comment">
-                Amazing Products & Delivery on time.
-              </p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3 class="customer-name">Sindy & Kitch</h3>
-              <p class="customer-comment">Great job with the trainer!</p>
-            </article>
-          </li>
-        </ul>
+      <section class="customer-section" id="customer-section">
+        <div class="container">
+          <h2 class="section-title centered">Happy customer</h2>
+          <!-- <div class="customer-container">
+            <button class="carousel-button" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button> -->
+          <ul class="customer-list">
+            <li class="customer-item">
+              <article class="customer-card">
+                <h3 class="customer-title">Christin & Tom</h3>
+                <p class="customer-text">
+                  Love the overall workout experience!
+                </p>
+              </article>
+            </li>
+            <li class="customer-item">
+              <article class="customer-card">
+                <h3 class="customer-title">Anna & Tobby</h3>
+                <p class="customer-text">
+                  Amazing Products & Delivery on time.
+                </p>
+              </article>
+            </li>
+            <li class="customer-item">
+              <article class="customer-card">
+                <h3 class="customer-title">Sindy & Kitch</h3>
+                <p class="customer-text">Great job with the trainer!</p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--                   Section 5                       -->
-      <section id="contact-section">
-        <h2 class="section-title">Our experts will take care of your friend</h2>
-        <p class="contact-comment-text">
-          Fill out the form so we can contact you!
-        </p>
+      <section class="contact-section" id="contact-section">
+        <div class="container">
+          <h2 class="section-title centered">
+            Our experts will take care of your friend
+          </h2>
+          <p class="contact-comment-text">
+            Fill out the form so we can contact you!
+          </p>
+        </div>
       </section>
     </main>
     <!--                       ФУТЕР                         -->
-    <footer>
-      <a href="#"><img src="./images/logo.svg" alt="Logo 'DOGclub'" /></a>
-      <a href="#"
-        ><img src="./images/footer-instagram-icon.svg" alt="instagram-icon"
-      /></a>
-      <a href="#"
-        ><img src="./images/footer-facebook-icon.svg" alt="facebook-icon"
-      /></a>
-      <ul>
-        <li><a class="link" href="#">Less talk</a></li>
-        <li><a class="link" href="#">Services category</a></li>
-        <li><a class="link" href="#">Happy customer</a></li>
-        <li><a class="link" href="#">Contact</a></li>
-      </ul>
-      <button class="footer-button" type="button">Contact us</button>
-      <img src="./images/footer-dog.jpg" alt="Cute dog" />
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-social">
+            <nav class="footer-nav">
+              <a href="#"
+                ><img src="./images/logo.svg" alt="Logo 'DOGclub'"
+              /></a>
+            </nav>
+            <address class="footer-address">
+              <a href="#">
+                <svg class="address-icon" width="40" height="40">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="address-icon" width="40" height="40">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </address>
+          </div>
+
+          <nav class="footer-nav">
+            <ul class="footer-menu">
+              <li><a class="link" href="#less-talk-section">Less talk</a></li>
+              <li>
+                <a class="link" href="#services-section">Services category</a>
+              </li>
+              <li>
+                <a class="link" href="#customer-section">Happy customer</a>
+              </li>
+              <li><a class="link" href="#contact-section">Contact</a></li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <button class="footer-button" type="button">Contact us</button>
+          </address>
+        </div>
+        <!-- <img src="./images/footer-dog.jpg" alt="Cute dog" /> -->
+        <!-- PNG DOWNLOAD and pos relative - i dunno -->
+      </div>
     </footer>
   </body>
 </html>
