@@ -38,7 +38,9 @@
                   <use href="./images/icons.svg#icon-shopping-bag"></use>
                 </svg>
               </button>
-              <button class="button" type="button">Contact us</button>
+              <button class="button modal-btn-open" type="button">
+                Contact us
+              </button>
             </div>
           </nav>
         </div>
@@ -73,7 +75,7 @@
             alt="Happy female dog"
           />
           <div>
-            <h2 class="section-title less-talk-title">
+            <h2 class="section-title">
               Less talk <br />
               and more walk
             </h2>
@@ -90,9 +92,7 @@
       <!--                   Section 3                       -->
       <section class="services-section" id="services-section">
         <div class="container">
-          <h2 class="services-title section-title centered">
-            Services category
-          </h2>
+          <h2 class="section-title centered">Services category</h2>
           <div class="services-section-container">
             <ul class="services-list">
               <li class="services-item">
@@ -128,55 +128,63 @@
                 Bathing
               </li>
             </ul>
-            <button class="services-end-list" type="button">
-              <img
-                src="./images/more-services-with-arrow.svg"
-                alt="more services"
-              />
-            </button>
+            <div class="services-end-list">
+              <button class="services-end-list-button" type="button">
+                <p class="services-end-list-button-text">more services</p>
+                <svg width="40" height="40">
+                  <use href="./images/icons.svg#icon-services-arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
-      <!--                   Section 4                       -->
+      <!--                   Section 4         FLEX BOX NOT RIGHT              -->
       <section class="customer-section" id="customer-section">
         <div class="container">
           <h2 class="section-title centered">Happy customer</h2>
-          <!-- <div class="customer-container">
+          <div class="customer-container">
             <button class="carousel-button" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
-            </button> -->
-          <ul class="customer-list">
-            <li class="customer-item">
-              <article class="customer-card">
-                <h3 class="customer-title">Christin & Tom</h3>
-                <p class="customer-text">
-                  Love the overall workout experience!
-                </p>
-              </article>
-            </li>
-            <li class="customer-item">
-              <article class="customer-card">
-                <h3 class="customer-title">Anna & Tobby</h3>
-                <p class="customer-text">
-                  Amazing Products & Delivery on time.
-                </p>
-              </article>
-            </li>
-            <li class="customer-item">
-              <article class="customer-card">
-                <h3 class="customer-title">Sindy & Kitch</h3>
-                <p class="customer-text">Great job with the trainer!</p>
-              </article>
-            </li>
-          </ul>
+            </button>
+            <ul class="customer-list">
+              <li class="customer-item">
+                <article class="customer-card">
+                  <h3 class="customer-title">Christin & Tom</h3>
+                  <p class="customer-text">
+                    Love the overall workout experience!
+                  </p>
+                </article>
+              </li>
+              <li class="customer-item">
+                <article class="customer-card">
+                  <h3 class="customer-title">Anna & Tobby</h3>
+                  <p class="customer-text">
+                    Amazing Products & Delivery on time.
+                  </p>
+                </article>
+              </li>
+              <li class="customer-item">
+                <article class="customer-card">
+                  <h3 class="customer-title">Sindy & Kitch</h3>
+                  <p class="customer-text">Great job with the trainer!</p>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button next" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <!--                   Section 5                       -->
       <section class="contact-section" id="contact-section">
         <div class="container">
-          <h2 class="section-title centered">
+          <h2 class="section-title contact">
             Our experts will take care of your friend
           </h2>
           <p class="contact-comment-text">
@@ -221,13 +229,131 @@
               <li><a class="link" href="#contact-section">Contact</a></li>
             </ul>
           </nav>
-          <address class="footer-address">
-            <button class="footer-button" type="button">Contact us</button>
-          </address>
+          <nav>
+            <!-- <address class="footer-address"> -->
+            <button class="footer-button footer-modal-btn-open" type="button">
+              Contact us
+            </button>
+            <!-- </address> -->
+          </nav>
         </div>
-        <!-- <img src="./images/footer-dog.jpg" alt="Cute dog" /> -->
-        <!-- PNG DOWNLOAD and pos relative - i dunno -->
       </div>
     </footer>
+    <!--                    Modal window                      -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="section-title contact">
+          Our experts will take care of your friend
+        </h2>
+        <p class="contact-comment-text">
+          Fill out the form so we can contact you!
+        </p>
+        <form name="modal-form" autocomplete="off">
+          <!-- СЮДА СВГ ПОСКАЧИВАТЬ -->
+          <div class="form-field">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+            <div>
+              <label class="form-label visually-hidden" for="user-name">
+                Your name
+              </label>
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Your name"
+                minlength="2"
+                maxlength="20"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+            <div>
+              <label class="form-label visually-hidden" for="user-name">
+                Pet name
+              </label>
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Pet name"
+                minlength="2"
+                maxlength="20"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+            <div>
+              <label class="form-label visually-hidden" for="user-tel">
+                Your phone
+              </label>
+              <input
+                class="form-input"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="Your phone"
+                pattern="^\+[0-9]{12}"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+            <div>
+              <label class="form-label visually-hidden" for="user-email">
+                Your email
+              </label>
+              <input
+                class="form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Your email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+            </div>
+          </div>
+
+          <button class="form-button button" type="submit">Contact us</button>
+
+          <div class="checkbox">
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              id="terms-conditions"
+              name="terms-conditions"
+            />
+            <label class="checkbox-label" for="terms-conditions">
+              I agree to the privacy policy
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
