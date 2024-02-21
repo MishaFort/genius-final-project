@@ -16,7 +16,7 @@
             <a href="/">
               <img
                 class="header-logo"
-                src="./images/logo.svg"
+                src="./images/header-logo.svg"
                 alt="Logo 'DOGclub'"
               />
             </a>
@@ -69,29 +69,81 @@
       </section>
       <!--                   Section 2                       -->
       <section class="less-talk-section" id="less-talk-section">
-        <div class="less-talk-container">
-          <img
-            src="./images/less-talk-section-dog.jpg"
-            alt="Happy female dog"
-          />
-          <div>
-            <h2 class="section-title">
-              Less talk <br />
-              and more walk
-            </h2>
-            <p class="less-talk-content">
-              Sometimes our career, lifestyle, or routines can make it difficult
-              to provide your pet with the recommended amount of exercise that
-              they need. Which is why, it’s okay to use an extra hand in walking
-              dogs so they are in perfect shape, mentally and physically.
-            </p>
-            <button class="button" type="button">Explore More</button>
+        <div class="container">
+          <div class="less-talk-container">
+            <div class="less-talk-dog-image">
+              <div>
+                <!-- В ICONS.SVG ЗАПИХНУТЬ ЧИ НЕ? -->
+                <img
+                  class="less-talk-animation-elements first"
+                  src="./images/less-talk-paw-vector-flipped.svg"
+                  alt="Paw"
+                />
+                <img
+                  class="less-talk-animation-elements second"
+                  src="./images/less-talk-paw-vector.svg"
+                  alt="Paw"
+                />
+                <img
+                  class="less-talk-animation-elements third"
+                  src="./images/less-talk-paw-vector.svg"
+                  alt="Paw"
+                />
+                <img
+                  class="less-talk-animation-elements bowl"
+                  src="./images/less-talk-dog-food-bowl.svg"
+                  alt="Dog bowl"
+                />
+
+                <!-- Я пока не знаю как лучше делать вставку на видео -->
+                <!-- <button
+                  class="less-talk-animation-elements video-button"
+                  type="button"
+                >
+                  <img
+                    src="./images/less-talk-video-button.png"
+                    alt="Video button"
+                  />
+                </button> -->
+                <a
+                  class="less-talk-animation-elements video-button"
+                  href="https://youtu.be/dQw4w9WgXcQ?si=vTpuwogl9_9Y_xuX"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/less-talk-video-button.png"
+                    alt="Video button"
+                  />
+                </a>
+              </div>
+
+              <img
+                src="./images/less-talk-section-only-dog.png"
+                alt="Happy female dog"
+              />
+            </div>
+
+            <div>
+              <h2 class="section-title">
+                Less talk <br />
+                and more walk
+              </h2>
+              <p class="less-talk-content">
+                Sometimes our career, lifestyle, or routines can make it
+                difficult to provide your pet with the recommended amount of
+                exercise that they need. Which is why, it’s okay to use an extra
+                hand in walking dogs so they are in perfect shape, mentally and
+                physically.
+              </p>
+              <button class="button" type="button">Explore More</button>
+            </div>
           </div>
         </div>
       </section>
       <!--                   Section 3                       -->
+      <!-- ОТДЕЛЬНО ФОН И СТРЕЛОЧКУ, А В БОДИ ТОЛЬКО LАПКИ -->
       <section class="services-section" id="services-section">
-        <div class="container">
+        <div class="container services-background">
           <h2 class="section-title centered">Services category</h2>
           <div class="services-section-container">
             <ul class="services-list">
@@ -102,7 +154,7 @@
                   alt="Grooming"
                 />
                 Grooming
-              </li>
+              </li> 
               <li class="services-item">
                 <img
                   class="services-image"
@@ -139,7 +191,7 @@
           </div>
         </div>
       </section>
-      <!--                   Section 4         FLEX BOX NOT RIGHT              -->
+      <!--                   Section 4                       -->
       <section class="customer-section" id="customer-section">
         <div class="container">
           <h2 class="section-title centered">Happy customer</h2>
@@ -184,12 +236,114 @@
       <!--                   Section 5                       -->
       <section class="contact-section" id="contact-section">
         <div class="container">
-          <h2 class="section-title contact">
-            Our experts will take care of your friend
-          </h2>
-          <p class="contact-comment-text">
-            Fill out the form so we can contact you!
-          </p>
+          <div class="contact-container">
+            <h2 class="section-title contact">
+              Our experts will take care of your friend
+            </h2>
+            <p class="contact-comment-text">
+              Fill out the form so we can contact you!
+            </p>
+            <form name="modal-form" autocomplete="off">
+              <div class="form-field">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-modal-your-name"></use>
+                </svg>
+                <div class="form-text">
+                  <label class="form-label visually-hidden" for="user-name">
+                    Your name
+                  </label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Your name"
+                    minlength="2"
+                    maxlength="20"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-modal-pet-name"></use>
+                </svg>
+                <div class="form-text">
+                  <label class="form-label visually-hidden" for="user-name">
+                    Pet name
+                  </label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Pet name"
+                    minlength="2"
+                    maxlength="20"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-modal-your-phone"></use>
+                </svg>
+                <div class="form-text">
+                  <label class="form-label visually-hidden" for="user-tel">
+                    Your phone
+                  </label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Your phone"
+                    pattern="^\+[0-9]{12}"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-modal-your-email"></use>
+                </svg>
+                <div class="form-text">
+                  <label class="form-label visually-hidden" for="user-email">
+                    Your email
+                  </label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Your email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required
+                  />
+                </div>
+              </div>
+
+              <button class="form-button button" type="submit">
+                Contact us
+              </button>
+
+              <div class="checkbox">
+                <input
+                  class="checkbox-input visually-hidden"
+                  type="checkbox"
+                  id="terms-conditions"
+                  name="terms-conditions"
+                  required
+                />
+                <label class="checkbox-label" for="terms-conditions">
+                  I agree to the privacy policy
+                </label>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -198,12 +352,12 @@
       <div class="container">
         <div class="footer-container">
           <div class="footer-social">
-            <nav class="footer-nav">
+            <nav>
               <a href="#"
-                ><img src="./images/logo.svg" alt="Logo 'DOGclub'"
+                ><img src="./images/footer-logo.svg" alt="Logo 'DOGclub'"
               /></a>
             </nav>
-            <address class="footer-address">
+            <address>
               <a href="#">
                 <svg class="address-icon" width="40" height="40">
                   <use href="./images/icons.svg#icon-instagram"></use>
@@ -217,7 +371,7 @@
             </address>
           </div>
 
-          <nav class="footer-nav">
+          <nav>
             <ul class="footer-menu">
               <li><a class="link" href="#less-talk-section">Less talk</a></li>
               <li>
@@ -229,18 +383,69 @@
               <li><a class="link" href="#contact-section">Contact</a></li>
             </ul>
           </nav>
-          <nav>
-            <!-- <address class="footer-address"> -->
-            <button class="footer-button footer-modal-btn-open" type="button">
-              Contact us
-            </button>
-            <!-- </address> -->
-          </nav>
+          <div class="footer-form-container">
+            <form name="modal-form" autocomplete="off">
+              <div class="footer-form-field">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-modal-your-email"></use>
+                </svg>
+                <div class="form-text">
+                  <label class="form-label visually-hidden" for="user-email">
+                    Your email
+                  </label>
+                  <input
+                    class="footer-form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Your email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="footer-form-field">
+                <div class="form-text">
+                  <label class="form-label visually-hidden" for="user-name">
+                    Your cmc
+                  </label>
+                  <input
+                    class="footer-form-input cmc"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Your cmc"
+                    minlength="2"
+                    maxlength="20"
+                    required
+                  />
+                </div>
+              </div>
+
+              <button class="form-button footer-button" type="submit">
+                Contact us
+              </button>
+
+              <div class="checkbox">
+                <input
+                  class="checkbox-input visually-hidden"
+                  type="checkbox"
+                  id="footer-terms-conditions"
+                  name="terms-conditions"
+                  required
+                />
+                <label class="checkbox-label" for="footer-terms-conditions">
+                  I agree to the privacy policy
+                </label>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
     <!--                    Modal window                      -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">
           <svg width="16" height="16">
@@ -254,12 +459,11 @@
           Fill out the form so we can contact you!
         </p>
         <form name="modal-form" autocomplete="off">
-          <!-- СЮДА СВГ ПОСКАЧИВАТЬ -->
           <div class="form-field">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-close"></use>
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-modal-your-name"></use>
             </svg>
-            <div>
+            <div class="form-text">
               <label class="form-label visually-hidden" for="user-name">
                 Your name
               </label>
@@ -277,10 +481,10 @@
           </div>
 
           <div class="form-field">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-close"></use>
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-modal-pet-name"></use>
             </svg>
-            <div>
+            <div class="form-text">
               <label class="form-label visually-hidden" for="user-name">
                 Pet name
               </label>
@@ -298,10 +502,10 @@
           </div>
 
           <div class="form-field">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-close"></use>
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-modal-your-phone"></use>
             </svg>
-            <div>
+            <div class="form-text">
               <label class="form-label visually-hidden" for="user-tel">
                 Your phone
               </label>
@@ -318,10 +522,10 @@
           </div>
 
           <div class="form-field">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-close"></use>
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-modal-your-email"></use>
             </svg>
-            <div>
+            <div class="form-text">
               <label class="form-label visually-hidden" for="user-email">
                 Your email
               </label>
@@ -343,10 +547,11 @@
             <input
               class="checkbox-input visually-hidden"
               type="checkbox"
-              id="terms-conditions"
+              id="modal-terms-conditions"
               name="terms-conditions"
+              required
             />
-            <label class="checkbox-label" for="terms-conditions">
+            <label class="checkbox-label" for="modal-terms-conditions">
               I agree to the privacy policy
             </label>
           </div>
