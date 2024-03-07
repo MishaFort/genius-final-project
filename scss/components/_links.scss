@@ -1,0 +1,13 @@
+.link {
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  line-height: 1.35;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s, transform 0.2s;
+
+  &:hover {
+    color: var(--color-brand-normal);
+    transform: scale(1.02);
+  }
+}

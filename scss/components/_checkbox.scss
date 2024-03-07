@@ -1,0 +1,35 @@
+.checkbox {
+  margin-top: 16px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+
+  &__input {
+    appearance: none;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 1px 0;
+    cursor: pointer;
+
+    &::before {
+      display: block;
+      width: 16px;
+      height: 16px;
+      padding: 0;
+      border: 1px solid var(--color-secondary-dark);
+      border-radius: 2px;
+      background-color: transparent;
+      content: '';
+    }
+  }
+
+  &__input:checked + &__label::before {
+    content: '✔';
+  }
+}

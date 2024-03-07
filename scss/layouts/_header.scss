@@ -1,0 +1,56 @@
+.header {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+/* РАЗБЕРИСЬ КАК ПО ЦЕНТРУ ПОСТАВИТЬ */
+.header::before {
+  position: absolute;
+  width: 1440px;
+  height: 2722px;
+  top: 43px;
+  background-image: url('../images/body-background.png');
+  content: '';
+  z-index: -1;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-grow: 1;
+}
+
+.header-logo {
+  display: block;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-grow: 1;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.header-shopping-bag-icon {
+  fill: var(--color-brand-normal);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header-shopping-bag-icon:hover {
+  fill: var(--color-brand-light);
+}

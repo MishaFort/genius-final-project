@@ -1,0 +1,8 @@
+.address-icon {
+  fill: var(--color-brand-normal);
+  transition: 0.2s;
+
+  &:hover {
+    fill: var(--color-brand-light);
+  }
+}

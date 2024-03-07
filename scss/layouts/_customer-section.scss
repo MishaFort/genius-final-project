@@ -1,0 +1,42 @@
+.customer-section {
+}
+.customer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 20px;
+}
+.customer-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.customer-item {
+  flex-basis: calc((100% - 16px - 16px) / 3);
+}
+.customer-card {
+  height: 456px;
+  padding: 16px 42px;
+  border: 1px solid lightgray;
+  /* remove later */
+  border-radius: 24px;
+  transition: transform 0.2s;
+}
+.customer-card:hover {
+  transform: scale(1.05);
+}
+.customer-title {
+  /* color: var(--color-primary-light); */
+  font-size: 24px;
+  font-weight: 500;
+  /*потом можно и 700 чекнуть*/
+  line-height: 1.2;
+}
+.customer-text {
+  /* color: var(--color-secondary-light); */
+  font-size: 16px;
+  line-height: 1.2;
+  /*чекнуть можно ли в артикль запихнуть*/
+}

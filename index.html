@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOGclub</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -154,7 +154,7 @@
                   alt="Grooming"
                 />
                 Grooming
-              </li> 
+              </li>
               <li class="services-item">
                 <img
                   class="services-image"
@@ -243,17 +243,19 @@
             <p class="contact-comment-text">
               Fill out the form so we can contact you!
             </p>
+            <!--                    form                          -->
             <form name="modal-form" autocomplete="off">
-              <div class="form-field">
+              <!-- Не МОДАЛ походу будет -->
+              <div class="input">
                 <svg width="32" height="32">
                   <use href="./images/icons.svg#icon-modal-your-name"></use>
                 </svg>
-                <div class="form-text">
-                  <label class="form-label visually-hidden" for="user-name">
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-name">
                     Your name
                   </label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="text"
                     name="user-name"
                     id="user-name"
@@ -265,16 +267,16 @@
                 </div>
               </div>
 
-              <div class="form-field">
+              <div class="input">
                 <svg width="32" height="32">
                   <use href="./images/icons.svg#icon-modal-pet-name"></use>
                 </svg>
-                <div class="form-text">
-                  <label class="form-label visually-hidden" for="user-name">
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-name">
                     Pet name
                   </label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="text"
                     name="user-name"
                     id="user-name"
@@ -286,16 +288,16 @@
                 </div>
               </div>
 
-              <div class="form-field">
+              <div class="input">
                 <svg width="32" height="32">
                   <use href="./images/icons.svg#icon-modal-your-phone"></use>
                 </svg>
-                <div class="form-text">
-                  <label class="form-label visually-hidden" for="user-tel">
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-tel">
                     Your phone
                   </label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="tel"
                     name="user-tel"
                     id="user-tel"
@@ -306,16 +308,16 @@
                 </div>
               </div>
 
-              <div class="form-field">
+              <div class="input">
                 <svg width="32" height="32">
                   <use href="./images/icons.svg#icon-modal-your-email"></use>
                 </svg>
-                <div class="form-text">
-                  <label class="form-label visually-hidden" for="user-email">
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-email">
                     Your email
                   </label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="email"
                     name="user-email"
                     id="user-email"
@@ -326,19 +328,19 @@
                 </div>
               </div>
 
-              <button class="form-button button" type="submit">
+              <button class="button button--centered" type="submit">
                 Contact us
               </button>
 
               <div class="checkbox">
                 <input
-                  class="checkbox-input visually-hidden"
+                  class="checkbox__input visually-hidden"
                   type="checkbox"
                   id="terms-conditions"
                   name="terms-conditions"
                   required
                 />
-                <label class="checkbox-label" for="terms-conditions">
+                <label class="checkbox__label" for="terms-conditions">
                   I agree to the privacy policy
                 </label>
               </div>
@@ -385,16 +387,16 @@
           </nav>
           <div class="footer-form-container">
             <form name="modal-form" autocomplete="off">
-              <div class="footer-form-field">
+              <div class="input input--mini">
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-modal-your-email"></use>
                 </svg>
-                <div class="form-text">
-                  <label class="form-label visually-hidden" for="user-email">
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-email">
                     Your email
                   </label>
                   <input
-                    class="footer-form-input"
+                    class="input__control input__control--mini"
                     type="email"
                     name="user-email"
                     id="user-email"
@@ -405,13 +407,13 @@
                 </div>
               </div>
 
-              <div class="footer-form-field">
-                <div class="form-text">
-                  <label class="form-label visually-hidden" for="user-name">
+              <div class="input input--mini">
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-name">
                     Your cmc
                   </label>
                   <input
-                    class="footer-form-input cmc"
+                    class="input__control input__control--mini input__control--no-icon"
                     type="text"
                     name="user-name"
                     id="user-name"
@@ -423,19 +425,22 @@
                 </div>
               </div>
 
-              <button class="form-button footer-button" type="submit">
+              <button
+                class="button button--mini button--centered"
+                type="submit"
+              >
                 Contact us
               </button>
 
               <div class="checkbox">
                 <input
-                  class="checkbox-input visually-hidden"
+                  class="checkbox__input visually-hidden"
                   type="checkbox"
                   id="footer-terms-conditions"
                   name="terms-conditions"
                   required
                 />
-                <label class="checkbox-label" for="footer-terms-conditions">
+                <label class="checkbox__label" for="footer-terms-conditions">
                   I agree to the privacy policy
                 </label>
               </div>
@@ -458,17 +463,19 @@
         <p class="contact-comment-text">
           Fill out the form so we can contact you!
         </p>
+
         <form name="modal-form" autocomplete="off">
-          <div class="form-field">
+          <!-- Не МОДАЛ походу будет -->
+          <div class="input">
             <svg width="32" height="32">
               <use href="./images/icons.svg#icon-modal-your-name"></use>
             </svg>
-            <div class="form-text">
-              <label class="form-label visually-hidden" for="user-name">
+            <div class="input__text">
+              <label class="input__label visually-hidden" for="user-name">
                 Your name
               </label>
               <input
-                class="form-input"
+                class="input__control"
                 type="text"
                 name="user-name"
                 id="user-name"
@@ -480,16 +487,16 @@
             </div>
           </div>
 
-          <div class="form-field">
+          <div class="input">
             <svg width="32" height="32">
               <use href="./images/icons.svg#icon-modal-pet-name"></use>
             </svg>
-            <div class="form-text">
-              <label class="form-label visually-hidden" for="user-name">
+            <div class="input__text">
+              <label class="input__label visually-hidden" for="user-name">
                 Pet name
               </label>
               <input
-                class="form-input"
+                class="input__control"
                 type="text"
                 name="user-name"
                 id="user-name"
@@ -501,16 +508,16 @@
             </div>
           </div>
 
-          <div class="form-field">
+          <div class="input">
             <svg width="32" height="32">
               <use href="./images/icons.svg#icon-modal-your-phone"></use>
             </svg>
-            <div class="form-text">
-              <label class="form-label visually-hidden" for="user-tel">
+            <div class="input__text">
+              <label class="input__label visually-hidden" for="user-tel">
                 Your phone
               </label>
               <input
-                class="form-input"
+                class="input__control"
                 type="tel"
                 name="user-tel"
                 id="user-tel"
@@ -521,16 +528,16 @@
             </div>
           </div>
 
-          <div class="form-field">
+          <div class="input">
             <svg width="32" height="32">
               <use href="./images/icons.svg#icon-modal-your-email"></use>
             </svg>
-            <div class="form-text">
-              <label class="form-label visually-hidden" for="user-email">
+            <div class="input__text">
+              <label class="input__label visually-hidden" for="user-email">
                 Your email
               </label>
               <input
-                class="form-input"
+                class="input__control"
                 type="email"
                 name="user-email"
                 id="user-email"
@@ -541,17 +548,19 @@
             </div>
           </div>
 
-          <button class="form-button button" type="submit">Contact us</button>
+          <button class="button button--centered" type="submit">
+            Contact us
+          </button>
 
           <div class="checkbox">
             <input
-              class="checkbox-input visually-hidden"
+              class="checkbox__input visually-hidden"
               type="checkbox"
               id="modal-terms-conditions"
               name="terms-conditions"
               required
             />
-            <label class="checkbox-label" for="modal-terms-conditions">
+            <label class="checkbox__label" for="modal-terms-conditions">
               I agree to the privacy policy
             </label>
           </div>

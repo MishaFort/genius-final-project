@@ -1,0 +1,24 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './base';
+@import './utils/utils';
+
+@import './components/address-icon';
+@import './components/buttons';
+@import './components/carousel-button';
+@import './components/checkbox';
+@import './components/input';
+@import './components/links';
+
+/* Выше вроде сделал, остались лейауты */
+
+@import './layouts/contact-section';
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/customer-section';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/less-talk-section';
+@import './layouts/modal';
+@import './layouts/section';
+@import './layouts/services-section';

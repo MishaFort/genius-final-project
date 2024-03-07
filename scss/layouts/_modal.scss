@@ -1,0 +1,42 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
+  padding: 140px;
+  background-color: var(--color-background-warm);
+  background-image: url('../images/modal-background.png');
+  border-radius: 32px;
+  overflow-y: auto;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 32px;
+  height: 32px;
+  fill: #31261a; /* DO I NEED TO ADD THIS AT TOP? */
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
