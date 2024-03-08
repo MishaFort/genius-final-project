@@ -1,7 +1,7 @@
 @import './utils/fonts';
+@import './utils/utils';
 @import './utils/variables';
 @import './base';
-@import './utils/utils';
 
 @import './components/address-icon';
 @import './components/buttons';
@@ -13,12 +13,12 @@
 /* Выше вроде сделал, остались лейауты */
 
 @import './layouts/contact-section';
-@import './layouts/container';
-@import './layouts/footer';
+@import './layouts/container'; //done
 @import './layouts/customer-section';
-@import './layouts/header';
-@import './layouts/hero-section';
-@import './layouts/less-talk-section';
+@import './layouts/footer';
+@import './layouts/header'; //done
+@import './layouts/hero-section'; //done
+@import './layouts/less-talk-section'; //need to rework maybe
 @import './layouts/modal';
-@import './layouts/section';
-@import './layouts/services-section';
+@import './layouts/section'; //done
+@import './layouts/services-section'; //done

@@ -11,16 +11,16 @@
     <!--                    ХЕДЕР                      -->
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="/">
               <img
-                class="header-logo"
+                class="header__logo"
                 src="./images/header-logo.svg"
                 alt="Logo 'DOGclub'"
               />
             </a>
-            <ul class="header-menu">
+            <ul class="header__menu">
               <li><a class="link" href="#less-talk-section">Less talk</a></li>
               <li>
                 <a class="link" href="#services-section">Services category</a>
@@ -32,8 +32,8 @@
             </ul>
           </nav>
           <nav>
-            <div class="header-buttons">
-              <button class="header-shopping-bag-icon" type="button">
+            <div class="header__buttons">
+              <button class="header__shopping-bag-icon" type="button">
                 <svg width="40" height="40">
                   <use href="./images/icons.svg#icon-shopping-bag"></use>
                 </svg>
@@ -51,17 +51,17 @@
       <!--                   Section 1                       -->
       <section class="hero-section">
         <div class="container">
-          <div class="hero-container">
-            <div class="hero-text">
-              <h1 class="section-title hero-title">
+          <div class="hero-section__container">
+            <div>
+              <h1 class="section-title hero-section__title">
                 Taking care for your Smart Dog!
               </h1>
-              <p class="hero-content">
+              <p class="hero-section__content">
                 Human–canine bonding is the relationship between dogs and humans
               </p>
               <button class="button" type="button">Explore More</button>
             </div>
-            <div class="hero-dog-image">
+            <div class="hero-section__dog-image">
               <img src="./images/hero-title-dog.png" alt="Happy dog" />
             </div>
           </div>
@@ -70,33 +70,33 @@
       <!--                   Section 2                       -->
       <section class="less-talk-section" id="less-talk-section">
         <div class="container">
-          <div class="less-talk-container">
-            <div class="less-talk-dog-image">
-              <div>
-                <!-- В ICONS.SVG ЗАПИХНУТЬ ЧИ НЕ? -->
-                <img
-                  class="less-talk-animation-elements first"
-                  src="./images/less-talk-paw-vector-flipped.svg"
-                  alt="Paw"
-                />
-                <img
-                  class="less-talk-animation-elements second"
-                  src="./images/less-talk-paw-vector.svg"
-                  alt="Paw"
-                />
-                <img
-                  class="less-talk-animation-elements third"
-                  src="./images/less-talk-paw-vector.svg"
-                  alt="Paw"
-                />
-                <img
-                  class="less-talk-animation-elements bowl"
-                  src="./images/less-talk-dog-food-bowl.svg"
-                  alt="Dog bowl"
-                />
+          <div class="less-talk-section__container">
+            <div class="less-talk-section__dog-image">
+              <!-- В ICONS.SVG ЗАПИХНУТЬ ЧИ НЕ? -->
+              <!-- КАК ЛУЧШЕ ПО БЕМ ДЕЛАТЬ ТО?! -->
+              <img
+                class="less-talk-section__animation-elements first-paw"
+                src="./images/less-talk-paw-vector-flipped.svg"
+                alt="Paw"
+              />
+              <img
+                class="less-talk-section__animation-elements second-paw"
+                src="./images/less-talk-paw-vector.svg"
+                alt="Paw"
+              />
+              <img
+                class="less-talk-section__animation-elements third-paw"
+                src="./images/less-talk-paw-vector.svg"
+                alt="Paw"
+              />
+              <img
+                class="less-talk-section__animation-elements bowl"
+                src="./images/less-talk-dog-food-bowl.svg"
+                alt="Dog bowl"
+              />
 
-                <!-- Я пока не знаю как лучше делать вставку на видео -->
-                <!-- <button
+              <!-- Я пока не знаю как лучше делать вставку на видео -->
+              <!-- <button
                   class="less-talk-animation-elements video-button"
                   type="button"
                 >
@@ -105,17 +105,16 @@
                     alt="Video button"
                   />
                 </button> -->
-                <a
-                  class="less-talk-animation-elements video-button"
-                  href="https://youtu.be/dQw4w9WgXcQ?si=vTpuwogl9_9Y_xuX"
-                  target="_blank"
-                >
-                  <img
-                    src="./images/less-talk-video-button.png"
-                    alt="Video button"
-                  />
-                </a>
-              </div>
+              <a
+                class="less-talk-section__animation-elements video-button"
+                href="https://youtu.be/dQw4w9WgXcQ?si=vTpuwogl9_9Y_xuX"
+                target="_blank"
+              >
+                <img
+                  src="./images/less-talk-video-button.png"
+                  alt="Video button"
+                />
+              </a>
 
               <img
                 src="./images/less-talk-section-only-dog.png"
@@ -128,7 +127,7 @@
                 Less talk <br />
                 and more walk
               </h2>
-              <p class="less-talk-content">
+              <p class="less-talk-section__content">
                 Sometimes our career, lifestyle, or routines can make it
                 difficult to provide your pet with the recommended amount of
                 exercise that they need. Which is why, it’s okay to use an extra
@@ -141,48 +140,51 @@
         </div>
       </section>
       <!--                   Section 3                       -->
-      <!-- ОТДЕЛЬНО ФОН И СТРЕЛОЧКУ, А В БОДИ ТОЛЬКО LАПКИ -->
       <section class="services-section" id="services-section">
-        <div class="container services-background">
+        <div class="container services-section__background">
           <h2 class="section-title centered">Services category</h2>
-          <div class="services-section-container">
-            <ul class="services-list">
-              <li class="services-item">
+          <div class="services-section__container">
+            <ul class="services-section__list">
+              <li class="services-section__item">
                 <img
-                  class="services-image"
+                  class="services-section__image"
                   src="./images/services-grooming.svg"
                   alt="Grooming"
                 />
                 Grooming
               </li>
-              <li class="services-item">
+              <li class="services-section__item">
                 <img
-                  class="services-image"
+                  class="services-section__image"
                   src="./images/services-nutrition.svg"
                   alt="Nutrition"
                 />
                 Nutrition
               </li>
-              <li class="services-item">
+              <li class="services-section__item">
                 <img
-                  class="services-image"
+                  class="services-section__image"
                   src="./images/services-training.svg"
                   alt="Training"
                 />
                 Training
               </li>
-              <li class="services-item">
+              <li class="services-section__item">
                 <img
-                  class="services-image"
+                  class="services-section__image"
                   src="./images/services-bathing.svg"
                   alt="Bathing"
                 />
                 Bathing
               </li>
             </ul>
-            <div class="services-end-list">
-              <button class="services-end-list-button" type="button">
-                <p class="services-end-list-button-text">more services</p>
+
+            <!-- Лучше походу просто было картинкой сделать -->
+            <div class="services-section__end-list">
+              <button class="services-section__end-list-button" type="button">
+                <p class="services-section__end-list-button-text">
+                  more services
+                </p>
                 <svg width="40" height="40">
                   <use href="./images/icons.svg#icon-services-arrow"></use>
                 </svg>
@@ -204,6 +206,11 @@
             <ul class="customer-list">
               <li class="customer-item">
                 <article class="customer-card">
+                  <img
+                    class="customer-card__image"
+                    src="./images/customer-christin-tom.jpg"
+                    alt="Customer Christin & Tom"
+                  />
                   <h3 class="customer-title">Christin & Tom</h3>
                   <p class="customer-text">
                     Love the overall workout experience!

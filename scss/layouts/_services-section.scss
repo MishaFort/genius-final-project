@@ -5,90 +5,98 @@
   background-position: bottom;
   /*   background-size: 1440px 486px; */
   background-size: 1440px 521px;
-}
-.container.services-background {
-  position: relative;
-}
-.container.services-background::after {
-  position: absolute;
-  width: 193px;
-  height: 144px;
-  top: -76px;
-  right: -31px;
-  /* In cause of angles, the distance (70, 31) is "on an eye" */
-  background-image: url('../images/services-background-arrow.png');
-  /* background-repeat: no-repeat; */
-  content: '';
-  transform: rotate(-176.5deg);
-}
 
-.services-section-container {
-  display: flex;
-  gap: 24px;
-}
+  &__background {
+    position: relative;
 
-.services-list {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  max-width: 1044px;
-  color: var(--color-brand-normal);
-  font-weight: 500;
-  line-height: 1.2;
-}
-.services-item {
-  flex-basis: calc((100% - 24px - 24px - 24px - 24px - 172px) / 4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* gap: 24px; */
-  /* С гепом неровно 4 элемент стоит (можно еще высоту убрать) */
-  height: 240px;
-  padding: 48px 72px;
-  background-image: linear-gradient(
-    180deg,
-    var(--color-primary-light) 0%,
-    #fffbf4 100%
-  );
-  border: 1px solid var(--color-background-cold);
-  border-radius: 16px;
-  box-shadow: 0px 4px 4px 0px var(--color-shadow-dark);
-  transition: transform 0.2s;
-}
-.services-item:hover {
-  transform: scale(1.05);
-}
-.services-image {
-  width: 96px;
-  height: 96px;
-}
+    &::after {
+      position: absolute;
+      width: 193px;
+      height: 144px;
+      top: -76px;
+      right: -31px;
+      /* In cause of angles, the distance (70, 31) is "on an eye" */
+      background-image: url('../images/services-background-arrow.png');
+      /* background-repeat: no-repeat; */
+      content: '';
+      transform: rotate(-176.5deg);
+    }
+  }
 
-.services-end-list {
-  display: flex;
-  align-self: flex-end;
-  justify-content: center;
-  flex-grow: 1;
-  max-width: 172px;
-}
-.services-end-list-button {
-  display: flex;
-  flex-shrink: 0;
-  gap: 8px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  color: var(--color-brand-normal);
-  fill: var(--color-brand-normal);
-  font-size: 18px;
-  line-height: 1.35;
-  transition: 0.2s;
-}
-.services-end-list-button:hover {
-  color: var(--color-brand-light);
-  fill: var(--color-brand-light);
-}
-.services-end-list-button-text {
-  align-self: flex-end;
-  margin: 0;
+  &__container {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1044px;
+    color: var(--color-brand-normal);
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 24px - 24px - 24px - 24px - 172px) / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 24px; */
+    /* С гепом неровно 4 элемент стоит (можно еще высоту убрать) */
+    height: 240px;
+    padding: 48px 72px;
+    background-image: linear-gradient(
+      180deg,
+      var(--color-primary-light) 0%,
+      #fffbf4 100%
+    );
+    border: 1px solid var(--color-background-cold);
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px var(--color-shadow-dark);
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__image {
+    width: 96px;
+    height: 96px;
+  }
+
+  &__end-list {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 172px;
+  }
+
+  &__end-list-button {
+    display: flex;
+    flex-shrink: 0;
+    gap: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-brand-normal);
+    fill: var(--color-brand-normal);
+    font-size: 18px;
+    line-height: 1.35;
+    transition: 0.2s;
+
+    &:hover {
+      color: var(--color-brand-light);
+      fill: var(--color-brand-light);
+    }
+  }
+
+  &__end-list-button-text {
+    align-self: flex-end;
+    margin: 0;
+  }
 }

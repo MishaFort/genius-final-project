@@ -1,41 +1,40 @@
 .hero-section {
   padding-top: 212px;
-  /* Это условно - пока что так */
   padding-bottom: 60px;
   background-image: url('../images/hero-background-vector.svg');
   background-repeat: no-repeat;
   background-position: center -23px;
   background-size: 1440px 808px;
-}
 
-.hero-container {
-  display: flex;
-  gap: 65px;
-}
+  &__container {
+    display: flex;
+    gap: 65px;
+  }
 
-.hero-title {
-  max-width: 650px;
-  font-size: 72px;
-  letter-spacing: 0.05em;
-}
+  &__title {
+    max-width: 650px;
+    font-size: 72px;
+    letter-spacing: 0.05em;
+  }
 
-.hero-content {
-  max-width: 500px;
-  margin-bottom: 24px;
-}
+  &__content {
+    max-width: 500px;
+    margin-bottom: 24px;
+  }
 
-.hero-dog-image {
-  position: relative;
-  top: 23px;
-}
+  &__dog-image {
+    position: relative;
+    top: 23px;
 
-.hero-dog-image::before {
-  position: absolute;
-  width: 827px;
-  height: 513px;
-  top: -84px;
-  right: -58px;
-  background-image: url('../images/hero-background-elements.png');
-  background-repeat: no-repeat;
-  content: '';
+    &::before {
+      position: absolute;
+      width: 827px;
+      height: 513px;
+      top: -84px;
+      right: -58px;
+      background-image: url('../images/hero-background-elements.png');
+      background-repeat: no-repeat;
+      content: '';
+    }
+  }
 }

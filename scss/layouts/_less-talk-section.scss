@@ -1,123 +1,135 @@
 .less-talk-section {
-  /*   position: relative; */
   padding: 150px 0 87px;
-}
 
-.less-talk-container {
-  display: flex;
-  gap: 84px;
-}
-.less-talk-dog-image {
-  position: relative;
-  top: 20px;
-}
-.less-talk-dog-image::before {
-  position: absolute;
-  width: 512px;
-  height: 563px;
-  top: -105px;
-  background-image: url('../images/less-talk-section-only-dog-background.svg');
-  content: '';
-  z-index: -1;
-}
-.less-talk-animation-elements {
-  position: absolute;
-}
-.less-talk-animation-elements.first {
-  bottom: 134px;
-  left: 52px;
-  transform: rotate(141.94deg);
-  animation: spin-scale-1 12s 2s infinite linear;
-}
-.less-talk-animation-elements.first:hover {
-  animation-play-state: paused;
-}
-/* СПРОСИТЬ КАК ЛУЧШЕ У КАТИ */
-@keyframes spin-scale-1 {
-  0% {
-    transform: rotate(141.94deg);
+  &__container {
+    display: flex;
+    gap: 84px;
   }
-  25% {
-    scale: 1.5;
-  }
-  50% {
-    scale: 1;
-  }
-  75% {
-    scale: 1.5;
-  }
-  100% {
-    scale: 1;
-    transform: rotate(501.94deg);
-  }
-}
-.less-talk-animation-elements.second {
-  top: -46px;
-  left: 171px;
-  transform: rotate(-28.19deg);
-  animation: spin-scale-2 12s 2s infinite linear;
-}
-.less-talk-animation-elements.second:hover {
-  animation-play-state: paused;
-}
-@keyframes spin-scale-2 {
-  0% {
-    /* transform: rotate(-28.19deg); */
-  }
-  25% {
-    scale: 1.5;
-  }
-  50% {
-    scale: 1;
-  }
-  75% {
-    scale: 1.5;
-  }
-  100% {
-    scale: 1;
-    /*  transform: rotate(-388.19deg); */
-  }
-}
-.less-talk-animation-elements.third {
-  top: 140px;
-  right: 36px;
-  transform: rotate(38.06deg);
-  animation: spin-scale-3 12s 2s infinite linear;
-}
-.less-talk-animation-elements.third:hover {
-  animation-play-state: paused;
-}
-@keyframes spin-scale-3 {
-  0% {
-    /* transform: rotate(38.06deg); */
-  }
-  25% {
-    scale: 1.5;
-  }
-  50% {
-    scale: 1;
-  }
-  75% {
-    scale: 1.5;
-  }
-  100% {
-    scale: 1;
-    /* transform: rotate(398.06deg); */
-  }
-}
-.less-talk-animation-elements.bowl {
-  bottom: -100px;
-  left: 215px;
-}
-.less-talk-animation-elements.video-button {
-  /* НАЖАТЬ МОЖНО И РЯДОМ, ЧЕКНИ ПОТОМ МОЖНО ЛИ ИСПРАВИТЬ */
-  top: -33px;
-  right: 50px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
 
-.less-talk-content {
-  margin-bottom: 24px;
+  &__dog-image {
+    position: relative;
+    top: 20px;
+
+    &::before {
+      position: absolute;
+      width: 512px;
+      height: 563px;
+      top: -105px;
+      background-image: url('../images/less-talk-section-only-dog-background.svg');
+      content: '';
+      z-index: -1;
+    }
+  }
+
+  &__animation-elements {
+    position: absolute;
+
+    &.first-paw {
+      bottom: 134px;
+      left: 52px;
+      transform: rotate(141.94deg);
+      animation: spin-scale-1 12s 2s infinite linear;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      /* СПРОСИТЬ КАК ЛУЧШЕ У КАТИ */
+      @keyframes spin-scale-1 {
+        0% {
+          transform: rotate(141.94deg);
+        }
+        25% {
+          scale: 1.5;
+        }
+        50% {
+          scale: 1;
+        }
+        75% {
+          scale: 1.5;
+        }
+        100% {
+          scale: 1;
+          transform: rotate(501.94deg);
+        }
+      }
+    }
+
+    &.second-paw {
+      top: -46px;
+      left: 171px;
+      transform: rotate(-28.19deg);
+      animation: spin-scale-2 12s 2s infinite linear;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes spin-scale-2 {
+        0% {
+          /* transform: rotate(-28.19deg); */
+        }
+        25% {
+          scale: 1.5;
+        }
+        50% {
+          scale: 1;
+        }
+        75% {
+          scale: 1.5;
+        }
+        100% {
+          scale: 1;
+          /*  transform: rotate(-388.19deg); */
+        }
+      }
+    }
+
+    &.third-paw {
+      top: 140px;
+      right: 36px;
+      transform: rotate(38.06deg);
+      animation: spin-scale-3 12s 2s infinite linear;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+      @keyframes spin-scale-3 {
+        0% {
+          /* transform: rotate(38.06deg); */
+        }
+        25% {
+          scale: 1.5;
+        }
+        50% {
+          scale: 1;
+        }
+        75% {
+          scale: 1.5;
+        }
+        100% {
+          scale: 1;
+          /* transform: rotate(398.06deg); */
+        }
+      }
+    }
+
+    &.bowl {
+      bottom: -100px;
+      left: 215px;
+    }
+
+    &.video-button {
+      /* НАЖАТЬ МОЖНО И РЯДОМ, ЧЕКНИ ПОТОМ МОЖНО ЛИ ИСПРАВИТЬ */
+      top: -33px;
+      right: 50px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    margin-bottom: 24px;
+  }
 }
