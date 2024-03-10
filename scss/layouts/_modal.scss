@@ -10,12 +10,14 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 0;
   transition: opacity 0.2s, visibility 0.2s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
 .modal {
   position: relative;
   width: 100%;
@@ -27,16 +29,26 @@
   background-image: url('../images/modal-background.png');
   border-radius: 32px;
   overflow-y: auto;
-}
-.modal-btn-close {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  width: 32px;
-  height: 32px;
-  fill: #31261a; /* DO I NEED TO ADD THIS AT TOP? */
-  background-color: transparent;
-  border: none;
-  padding: 8px;
-  cursor: pointer;
+
+  &__btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 32px;
+    height: 32px;
+    fill: #31261a; /* DO I NEED TO ADD THIS AT TOP? */
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  &__comment-text {
+    color: var(--color-secondary-dark);
+    font-size: 18px;
+    line-height: 1.35;
+    text-align: center;
+    margin-bottom: 42px;
+    letter-spacing: 0.05em;
+  }
 }

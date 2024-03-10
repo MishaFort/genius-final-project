@@ -5,8 +5,13 @@
   line-height: 1.25;
   margin-bottom: 40px;
 
-  &.centered {
+  &--centered {
     text-align: center;
     margin-bottom: 48px;
+  }
+
+  &--modal {
+    text-align: center;
+    margin-bottom: 16px;
   }
 }

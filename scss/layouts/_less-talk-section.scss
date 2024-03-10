@@ -21,112 +21,113 @@
     }
   }
 
-  &__animation-elements {
+  &__first-paw {
     position: absolute;
+    bottom: 134px;
+    left: 52px;
+    transform: rotate(141.94deg);
+    animation: spin-scale-1 12s 2s infinite linear;
 
-    &.first-paw {
-      bottom: 134px;
-      left: 52px;
-      transform: rotate(141.94deg);
-      animation: spin-scale-1 12s 2s infinite linear;
-
-      &:hover {
-        animation-play-state: paused;
-      }
-
-      /* СПРОСИТЬ КАК ЛУЧШЕ У КАТИ */
-      @keyframes spin-scale-1 {
-        0% {
-          transform: rotate(141.94deg);
-        }
-        25% {
-          scale: 1.5;
-        }
-        50% {
-          scale: 1;
-        }
-        75% {
-          scale: 1.5;
-        }
-        100% {
-          scale: 1;
-          transform: rotate(501.94deg);
-        }
-      }
+    &:hover {
+      animation-play-state: paused;
     }
 
-    &.second-paw {
-      top: -46px;
-      left: 171px;
-      transform: rotate(-28.19deg);
-      animation: spin-scale-2 12s 2s infinite linear;
-
-      &:hover {
-        animation-play-state: paused;
+    /* СПРОСИТЬ КАК ЛУЧШЕ У КАТИ */
+    @keyframes spin-scale-1 {
+      0% {
+        transform: rotate(141.94deg);
       }
-
-      @keyframes spin-scale-2 {
-        0% {
-          /* transform: rotate(-28.19deg); */
-        }
-        25% {
-          scale: 1.5;
-        }
-        50% {
-          scale: 1;
-        }
-        75% {
-          scale: 1.5;
-        }
-        100% {
-          scale: 1;
-          /*  transform: rotate(-388.19deg); */
-        }
+      25% {
+        scale: 1.5;
+      }
+      50% {
+        scale: 1;
+      }
+      75% {
+        scale: 1.5;
+      }
+      100% {
+        scale: 1;
+        transform: rotate(501.94deg);
       }
     }
+  }
 
-    &.third-paw {
-      top: 140px;
-      right: 36px;
-      transform: rotate(38.06deg);
-      animation: spin-scale-3 12s 2s infinite linear;
+  &__second-paw {
+    position: absolute;
+    top: -46px;
+    left: 171px;
+    transform: rotate(-28.19deg);
+    animation: spin-scale-2 12s 2s infinite linear;
 
-      &:hover {
-        animation-play-state: paused;
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes spin-scale-2 {
+      0% {
+        /* transform: rotate(-28.19deg); */
       }
-      @keyframes spin-scale-3 {
-        0% {
-          /* transform: rotate(38.06deg); */
-        }
-        25% {
-          scale: 1.5;
-        }
-        50% {
-          scale: 1;
-        }
-        75% {
-          scale: 1.5;
-        }
-        100% {
-          scale: 1;
-          /* transform: rotate(398.06deg); */
-        }
+      25% {
+        scale: 1.5;
+      }
+      50% {
+        scale: 1;
+      }
+      75% {
+        scale: 1.5;
+      }
+      100% {
+        scale: 1;
+        /*  transform: rotate(-388.19deg); */
       }
     }
+  }
 
-    &.bowl {
-      bottom: -100px;
-      left: 215px;
-    }
+  &__third-paw {
+    position: absolute;
+    top: 140px;
+    right: 36px;
+    transform: rotate(38.06deg);
+    animation: spin-scale-3 12s 2s infinite linear;
 
-    &.video-button {
-      /* НАЖАТЬ МОЖНО И РЯДОМ, ЧЕКНИ ПОТОМ МОЖНО ЛИ ИСПРАВИТЬ */
-      top: -33px;
-      right: 50px;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
+    &:hover {
+      animation-play-state: paused;
     }
+    @keyframes spin-scale-3 {
+      0% {
+        /* transform: rotate(38.06deg); */
+      }
+      25% {
+        scale: 1.5;
+      }
+      50% {
+        scale: 1;
+      }
+      75% {
+        scale: 1.5;
+      }
+      100% {
+        scale: 1;
+        /* transform: rotate(398.06deg); */
+      }
+    }
+  }
+
+  &__bowl {
+    position: absolute;
+    bottom: -100px;
+    left: 215px;
+  }
+
+  &__video-button {
+    /* НАЖАТЬ МОЖНО И РЯДОМ, ЧЕКНИ ПОТОМ МОЖНО ЛИ ИСПРАВИТЬ */
+    position: absolute;
+    top: -33px;
+    right: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 
   &__content {
