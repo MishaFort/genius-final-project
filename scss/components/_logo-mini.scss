@@ -1,0 +1,11 @@
+.logo-mini {
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+  }
+
+  &__burger-menu {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+  }
+}

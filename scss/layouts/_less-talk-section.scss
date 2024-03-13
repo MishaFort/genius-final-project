@@ -19,105 +19,106 @@
       content: '';
       z-index: -1;
     }
-  }
 
-  &__first-paw {
-    position: absolute;
-    bottom: 134px;
-    left: 52px;
-    transform: rotate(141.94deg);
-    animation: spin-scale-1 12s 2s infinite linear;
+    &.first-paw {
+      position: absolute;
+      /* bottom: 134px; */
+      top: 222px;
+      left: 52px;
+      transform: rotate(141.94deg);
+      animation: spin-scale-1 12s 2s infinite linear;
 
-    &:hover {
-      animation-play-state: paused;
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes spin-scale-1 {
+        0% {
+          transform: rotate(141.94deg);
+        }
+        25% {
+          scale: 1.5;
+        }
+        50% {
+          scale: 1;
+        }
+        75% {
+          scale: 1.5;
+        }
+        100% {
+          scale: 1;
+          transform: rotate(501.94deg);
+        }
+      }
     }
 
-    /* СПРОСИТЬ КАК ЛУЧШЕ У КАТИ */
-    @keyframes spin-scale-1 {
-      0% {
-        transform: rotate(141.94deg);
+    &.second-paw {
+      position: absolute;
+      top: -46px;
+      left: 171px;
+      transform: rotate(-28.19deg);
+      animation: spin-scale-2 12s 2s infinite linear;
+
+      &:hover {
+        animation-play-state: paused;
       }
-      25% {
-        scale: 1.5;
-      }
-      50% {
-        scale: 1;
-      }
-      75% {
-        scale: 1.5;
-      }
-      100% {
-        scale: 1;
-        transform: rotate(501.94deg);
+
+      @keyframes spin-scale-2 {
+        0% {
+          transform: rotate(-28.19deg);
+        }
+        25% {
+          scale: 1.5;
+        }
+        50% {
+          scale: 1;
+        }
+        75% {
+          scale: 1.5;
+        }
+        100% {
+          scale: 1;
+          transform: rotate(-388.19deg);
+        }
       }
     }
-  }
 
-  &__second-paw {
-    position: absolute;
-    top: -46px;
-    left: 171px;
-    transform: rotate(-28.19deg);
-    animation: spin-scale-2 12s 2s infinite linear;
+    &.third-paw {
+      position: absolute;
+      top: 140px;
+      right: 36px;
+      transform: rotate(38.06deg);
+      animation: spin-scale-3 12s 2s infinite linear;
 
-    &:hover {
-      animation-play-state: paused;
+      &:hover {
+        animation-play-state: paused;
+      }
+      @keyframes spin-scale-3 {
+        0% {
+          transform: rotate(38.06deg);
+        }
+        25% {
+          scale: 1.5;
+        }
+        50% {
+          scale: 1;
+        }
+        75% {
+          scale: 1.5;
+        }
+        100% {
+          scale: 1;
+          transform: rotate(398.06deg);
+        }
+      }
     }
 
-    @keyframes spin-scale-2 {
-      0% {
-        /* transform: rotate(-28.19deg); */
-      }
-      25% {
-        scale: 1.5;
-      }
-      50% {
-        scale: 1;
-      }
-      75% {
-        scale: 1.5;
-      }
-      100% {
-        scale: 1;
-        /*  transform: rotate(-388.19deg); */
-      }
+    &.bowl {
+      position: absolute;
+      /*  bottom: -100px; */
+      top: 440px;
+      left: 215px;
     }
-  }
-
-  &__third-paw {
-    position: absolute;
-    top: 140px;
-    right: 36px;
-    transform: rotate(38.06deg);
-    animation: spin-scale-3 12s 2s infinite linear;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-    @keyframes spin-scale-3 {
-      0% {
-        /* transform: rotate(38.06deg); */
-      }
-      25% {
-        scale: 1.5;
-      }
-      50% {
-        scale: 1;
-      }
-      75% {
-        scale: 1.5;
-      }
-      100% {
-        scale: 1;
-        /* transform: rotate(398.06deg); */
-      }
-    }
-  }
-
-  &__bowl {
-    position: absolute;
-    bottom: -100px;
-    left: 215px;
   }
 
   &__video-button {

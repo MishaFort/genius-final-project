@@ -19,6 +19,13 @@
           <nav class="header__nav">
             <a href="/">
               <img
+                class="logo-mini"
+                src="./images/logo-mini.svg"
+                alt="Logo 'DOGclub'"
+              />
+            </a>
+            <a href="/">
+              <img
                 class="header__logo"
                 src="./images/header-logo.svg"
                 alt="Logo 'DOGclub'"
@@ -37,14 +44,80 @@
           </nav>
           <nav>
             <div class="header__buttons">
-              <button class="header__shopping-bag-icon" type="button">
-                <svg width="40" height="40">
+              <button class="header__shopping-bag-button" type="button">
+                <svg class="header__shopping-bag-icon">
                   <use href="./images/icons.svg#icon-shopping-bag"></use>
                 </svg>
               </button>
-              <button class="button modal-btn-open" type="button">
+              <button
+                class="header__button button modal-btn-open"
+                type="button"
+              >
                 Contact us
               </button>
+              <button class="header__burger menu-btn-open" type="button">
+                <svg class="header__burger-icon">
+                  <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+
+            <!--                        Mobile menu                           -->
+            <div class="mobile-menu">
+              <nav class="mobile-menu__header">
+                <a href="/">
+                  <img
+                    class="header__logo"
+                    src="./images/header-logo.svg"
+                    alt="Logo 'DOGclub'"
+                  />
+                </a>
+                <a href="/">
+                  <img
+                    class="logo-mini logo-mini__burger-menu"
+                    src="./images/logo-mini.svg"
+                    alt="Logo 'DOGclub'"
+                  />
+                </a>
+                <button
+                  class="mobile-menu__btn-close menu-btn-close"
+                  type="button"
+                >
+                  <svg class="mobile-menu__btn-close-icon">
+                    <use href="./images/icons.svg#icon-close-button"></use>
+                  </svg>
+                </button>
+              </nav>
+              <nav>
+                <ul class="mobile-menu__menu">
+                  <li>
+                    <a class="link" href="#less-talk-section">Less talk</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#services-section">
+                      Services category
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link" href="#customer-section">Happy customer</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#contact-section">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <address class="socials-address">
+                <a href="#" class="socials-address__link">
+                  <svg class="socials-address__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a href="#" class="socials-address__link">
+                  <svg class="socials-address__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </address>
             </div>
           </nav>
         </div>
@@ -53,7 +126,7 @@
     <!--                    МЕЙН                       -->
     <main>
       <!--                   Section 1                       -->
-      <section class="hero-section">
+      <!--      <section class="hero-section">
         <div class="container">
           <div class="hero-section__container">
             <div>
@@ -70,45 +143,38 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+
       <!--                   Section 2                       -->
-      <section class="less-talk-section" id="less-talk-section">
+      <!--     <section class="less-talk-section" id="less-talk-section">
         <div class="container">
           <div class="less-talk-section__container">
             <div class="less-talk-section__dog-image">
-              <!-- В ICONS.SVG ЗАПИХНУТЬ ЧИ НЕ? -->
-              <!-- КАК ЛУЧШЕ ПО БЕМ ДЕЛАТЬ ТО?! -->
               <img
-                class="less-talk-section__first-paw"
+                src="./images/less-talk-section-only-dog.png"
+                alt="Happy female dog"
+              />
+              <img
+                class="less-talk-section__dog-image first-paw"
                 src="./images/less-talk-paw-vector-flipped.svg"
                 alt="Paw"
               />
               <img
-                class="less-talk-section__second-paw"
+                class="less-talk-section__dog-image second-paw"
                 src="./images/less-talk-paw-vector.svg"
                 alt="Paw"
               />
               <img
-                class="less-talk-section__third-paw"
+                class="less-talk-section__dog-image third-paw"
                 src="./images/less-talk-paw-vector.svg"
                 alt="Paw"
               />
               <img
-                class="less-talk-section__bowl"
+                class="less-talk-section__dog-image bowl"
                 src="./images/less-talk-dog-food-bowl.svg"
                 alt="Dog bowl"
               />
 
-              <!-- Я пока не знаю как лучше делать вставку на видео -->
-              <!-- <button
-                  class="less-talk-animation-elements video-button"
-                  type="button"
-                >
-                  <img
-                    src="./images/less-talk-video-button.png"
-                    alt="Video button"
-                  />
-                </button> -->
               <a
                 class="less-talk-section__video-button"
                 href="https://youtu.be/dQw4w9WgXcQ?si=vTpuwogl9_9Y_xuX"
@@ -119,11 +185,6 @@
                   alt="Video button"
                 />
               </a>
-
-              <img
-                src="./images/less-talk-section-only-dog.png"
-                alt="Happy female dog"
-              />
             </div>
 
             <div>
@@ -142,9 +203,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+
       <!--                   Section 3                       -->
-      <section class="services-section" id="services-section">
+      <!--       <section class="services-section" id="services-section">
         <div class="container services-section__background">
           <h2 class="section-title section-title--centered">
             Services category
@@ -184,8 +246,6 @@
                 Bathing
               </li>
             </ul>
-
-            <!-- Лучше походу просто было картинкой сделать -->
             <div class="services-section__end-list">
               <button class="services-section__end-list-button" type="button">
                 <p class="services-section__end-list-button-text">
@@ -198,9 +258,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+
       <!--                   Section 4                       -->
-      <section class="customer-section" id="customer-section">
+      <!--       <section class="customer-section" id="customer-section">
         <div class="container">
           <h2 class="section-title section-title--centered">Happy customer</h2>
           <div class="customer-section__slider">
@@ -274,7 +335,7 @@
                     </div>
                   </article>
                 </li>
-                <!-- ЧЕЛ, НЕ ЗАБУДЬ УБРАТЬ ЭТИ ПРИКОЛЫ -->
+
                 <li class="swiper-slide">
                   <article class="customer-card">
                     <img
@@ -346,9 +407,10 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
+
       <!--                   Section 5                       -->
-      <section class="contact-section" id="contact-section">
+      <!--       <section class="contact-section" id="contact-section">
         <div class="container">
           <div class="contact-section__container">
             <h2 class="section-title section-title--modal">
@@ -356,9 +418,10 @@
             </h2>
             <p class="contact-section__comment-text">
               Fill out the form so we can contact you!
-            </p>
-            <!--                    form                          -->
-            <form name="modal-form" autocomplete="off">
+            </p> -->
+
+      <!--                    form                          -->
+      <!--             <form name="modal-form" autocomplete="off">
               <div class="input">
                 <svg width="32" height="32">
                   <use href="./images/icons.svg#icon-modal-your-name"></use>
@@ -460,10 +523,11 @@
             </form>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
+
     <!--                       ФУТЕР                         -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <div class="footer__social">
@@ -472,18 +536,18 @@
                 ><img src="./images/footer-logo.svg" alt="Logo 'DOGclub'"
               /></a>
             </nav>
-            <address>
-              <a href="#">
-                <svg class="address-icon" width="40" height="40">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-              <a href="#">
-                <svg class="address-icon" width="40" height="40">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </address>
+            <address class="socials-address">
+                <a href="#" class="socials-address__link">
+                  <svg class="socials-address__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a href="#" class="socials-address__link">
+                  <svg class="socials-address__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </address>
           </div>
 
           <nav>
@@ -561,9 +625,10 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
     <!--                    Modal window                      -->
-    <div class="backdrop is-hidden">
+    <!--     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
           <svg width="16" height="16">
@@ -678,11 +743,12 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./js/formats-slider.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

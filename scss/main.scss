@@ -3,16 +3,17 @@
 @import './utils/variables';
 @import './base';
 
-@import './components/address-icon';
 @import './components/buttons';
 @import './components/carousel-button';
 @import './components/checkbox';
 @import './components/customer-card'; //done
 @import './components/input';
 @import './components/links';
+@import './components/logo-mini';
 @import './components/pagination';
+@import './components/socials-address';
 
-/* Выше вроде сделал, остались лейауты */
+/* Выше вроде сделал */
 
 @import './layouts/contact-section'; //done
 @import './layouts/container'; //done
@@ -21,6 +22,7 @@
 @import './layouts/header'; //done
 @import './layouts/hero-section'; //done
 @import './layouts/less-talk-section'; //done
+@import './layouts/mobile-menu'; //done
 @import './layouts/modal'; //done
 @import './layouts/section'; //done
 @import './layouts/services-section'; //done
