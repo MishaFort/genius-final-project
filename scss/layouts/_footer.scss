@@ -1,22 +1,50 @@
 .footer {
-  padding: 32px 0;
+  padding: 14px 0 40px;
   background-color: var(--color-background-warm);
+
+  @media screen and (min-width: $bp-desktop) {
+    margin: 18px 0 50px;
+    padding: 32px 0;
+  }
 
   &__container {
     display: flex;
-    gap: 136px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
     position: relative;
-    max-height: 174px;
 
-    &::after {
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 110px;
+    }
+    @media screen and (min-width: $bp-max) {
+      gap: 136px;
+    }
+
+    &::before {
       position: absolute;
-      width: 292px;
-      height: 305px;
-      top: -50px;
-      right: 0;
-      background-image: url('../images/footer-dog.png');
-      background-repeat: no-repeat;
       content: '';
+      width: 128px;
+      height: 146px;
+      top: -136px;
+      right: 50%;
+      transform: translateX(50%);
+      background-image: url('../images/footer-dog.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      content: '';
+
+      @media screen and (min-width: $bp-desktop) {
+        width: 292px;
+        height: 305px;
+        top: -50px;
+        right: 293px;
+        margin-left: 0;
+        transform: translateX(100%);
+      }
     }
   }
 
@@ -26,10 +54,31 @@
     gap: 24px;
   }
 
+  &__nav {
+    max-height: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-height: 40px;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+
   &__menu {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: start;
+    }
   }
 
   &__form-container {

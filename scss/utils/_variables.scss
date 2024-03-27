@@ -9,8 +9,11 @@
   --color-shadow-dark: #1818170d;
   --color-background-warm: #fffaf3;
   --color-background-cold: #f9f9ff;
+
+  --viewport-width: 100vw;
 }
 
 $bp-mobile: 480px;
 $bp-tablet: 768px;
-$bp-desktop: 1280px;
+$bp-desktop: 1200px;
+$bp-max: 1440px;

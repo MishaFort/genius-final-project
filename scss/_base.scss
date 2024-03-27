@@ -13,7 +13,7 @@ body {
   line-height: 1.2;
   margin: 0;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     font-size: 22px;
     line-height: 1.55;
   }
@@ -48,4 +48,8 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+li {
+  font-size: 0;
 }

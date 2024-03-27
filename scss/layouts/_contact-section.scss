@@ -2,58 +2,97 @@
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 72px 0 164px;
+  overflow-x: hidden;
 
-  /* Псевдоэлемент ибо бэкграунд надо подвинуть */
-  /* Спросить у бота как лучше */
+  @media screen and (min-width: $bp-desktop) {
+    padding: 168px 0 92px;
+    overflow: visible;
+  }
+
   &::before {
     position: absolute;
-    width: 1440px;
-    height: 833px;
-    top: -21px;
-    /* 21 на глаз */
-    background-image: url('../images/contact-background.png');
-    background-repeat: no-repeat;
     content: '';
+    top: calc(0px - (100vw - 360px) * 0.09);
+    left: calc(-80px - (100vw - 360px) * 0.13);
+    width: calc(619px + 100vw - 360px);
+    height: calc(257px + (100vw - 360px) * 0.33);
+    background-image: url('../images/contact-background-vector.svg');
+    background-size: cover;
     z-index: -1;
+
+    @media screen and (min-width: $bp-desktop) {
+      top: -66px;
+      left: 0;
+      width: 100vw;
+      height: calc(694px + (100vw - 1200px) * 0.58);
+      background-image: url('../images/contact-background-vector-desktop.svg');
+    }
+
+    @media screen and (min-width: $bp-max) {
+      width: 1440px;
+      height: 833px;
+    }
   }
 
   &__container {
     position: relative;
     max-width: 648px;
     margin: 0 auto;
-    padding: 211px 24px 92px;
-    /* 211 - к карточке; 92 условно пока что */
 
     &::before,
     &::after {
-      position: absolute;
-      /* background-repeat: no-repeat; */
-      content: '';
+      @media screen and (min-width: $bp-desktop) {
+        position: absolute;
+        content: '';
+      }
     }
 
     &::before {
       width: 353px;
       height: 520px;
-      top: 263px;
-      left: -396px;
+      top: 52px;
+      left: calc(-354px - (100vw - 1200px) * 0.175);
       background-image: url('../images/contact-walking-dog-before.png');
+
+      @media screen and (min-width: $bp-max) {
+        left: -396px;
+      }
     }
 
     &::after {
       width: 322px;
       height: 752px;
-      top: 74px;
-      right: -396px;
+      top: -137px;
+      right: calc(-275px - (100vw - 1200px) * 0.5);
       background-image: url('../images/contact-asking-dog-after.png');
+
+      @media screen and (min-width: $bp-max) {
+        right: -396px;
+      }
     }
+  }
+
+  &__title-part {
+    padding: 0 33px;
   }
 
   &__comment-text {
     color: var(--color-secondary-dark);
-    font-size: 18px;
-    line-height: 1.35;
+    font-size: 14px;
+    line-height: 1.2;
     text-align: center;
-    margin-bottom: 42px;
-    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      line-height: 1.35;
+      margin-bottom: 42px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
   }
 }
