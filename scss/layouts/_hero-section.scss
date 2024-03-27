@@ -23,7 +23,7 @@
     top: -32px;
     right: 0;
     width: 625px;
-    height: calc(323px + ((var(--viewport-width) - 360px) * 0.16));
+    height: calc(323px + ((100vw - 360px) * 0.16));
     background-image: url('/images/hero-background-vector.svg');
     background-size: 100% 100%;
     background-position: center center;
@@ -31,28 +31,21 @@
     z-index: -1;
 
     @media screen and (min-width: 625px) {
-      right: calc((var(--viewport-width) - 625px) / 2);
+      right: calc((100vw - 625px) / 2);
     }
 
     @media screen and (min-width: $bp-tablet) {
-      top: calc(-52px - ((var(--viewport-width) - 768px) * 0.05));
-      right: calc(
-        (var(--viewport-width) - (625px + (var(--viewport-width) - 625px))) / 2
-      );
-      width: calc(625px + (var(--viewport-width) - 625px));
-      height: calc(323px + 40px + ((var(--viewport-width) - 360px) * 0.16));
+      top: calc(-52px - (100vw - 768px) * 0.05);
+      right: 0;
+      width: 100vw;
+      height: calc(323px + 40px + (100vw - 360px) * 0.16);
     }
 
     @media screen and (min-width: $bp-desktop) {
       top: -5px;
-      right: 0;
       width: 1563px;
       height: 808px;
       background-repeat: no-repeat;
-    }
-
-    @media screen and (min-width: 1563px) {
-      right: 0;
     }
   }
 
