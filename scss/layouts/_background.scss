@@ -1,0 +1,33 @@
+.background {
+  &__main {
+    &::before {
+      @media screen and (min-width: $bp-max) {
+        position: absolute;
+        content: '';
+        width: 1440px;
+        height: 2722px;
+        top: 43px;
+        left: 0;
+        background-image: url('../images/body-background.png');
+        background-size: cover;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__nutrition {
+    &::before {
+      @media screen and (min-width: $bp-max) {
+        position: absolute;
+        content: '';
+        width: 1440px;
+        height: 1751px;
+        top: 43px;
+        left: 0;
+        background-image: url('../images/body-background-nutrition.png');
+        background-size: cover;
+        z-index: -1;
+      }
+    }
+  }
+}

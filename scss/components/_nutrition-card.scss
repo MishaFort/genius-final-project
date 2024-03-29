@@ -1,0 +1,56 @@
+.nutrition-card {
+  height: 512px;
+  max-width: 288px;
+  border-radius: 8px;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0px 8px 16px 0px #18181714;
+  }
+
+  &__image {
+    margin: 14px auto;
+  }
+
+  &__content-container {
+    padding: 8px 16px 24px;
+    line-height: 1.2;
+  }
+
+  &__vendor-code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__vendor-code-text {
+    color: var(--color-secondary-dark);
+    font-size: 14px;
+    /*  margin: 0; */
+  }
+
+  &__text {
+    font-size: 16px;
+    margin: 16px 0 24px;
+    text-align: center;
+  }
+
+  &__prize {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__new-prize-text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__old-prize-text {
+    font-size: 14px;
+    text-decoration: line-through;
+  }
+}

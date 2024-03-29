@@ -10,9 +10,11 @@
 @import './components/input';
 @import './components/links';
 @import './components/logo-mini';
+@import './components/nutrition-card';
 @import './components/pagination';
 @import './components/socials-address';
 
+@import './layouts/background';
 @import './layouts/contact-section';
 @import './layouts/container';
 @import './layouts/customer-section';
@@ -22,5 +24,6 @@
 @import './layouts/less-talk-section';
 @import './layouts/mobile-menu';
 @import './layouts/modal';
+@import './layouts/nutrition';
 @import './layouts/section';
 @import './layouts/services-section';

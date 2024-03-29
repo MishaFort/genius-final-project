@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOGclub Nutrition</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!--     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+  </head>
+
+  <body>
+    <!--                    ХЕДЕР                      -->
+    <header class="header">
+      <div class="container background background__nutrition">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="/">
+              <img
+                class="logo-mini"
+                src="./images/logo-mini.svg"
+                alt="Logo 'DOGclub'"
+              />
+            </a>
+            <a href="/">
+              <img
+                class="header__logo"
+                src="./images/header-logo.svg"
+                alt="Logo 'DOGclub'"
+              />
+            </a>
+            <ul class="header__menu">
+              <li>
+                <a class="link" href="index.html#less-talk-section"
+                  >Less talk
+                </a>
+              </li>
+              <li>
+                <a class="link" href="index.html#services-section"
+                  >Services category
+                </a>
+              </li>
+              <li>
+                <a class="link" href="index.html#customer-section"
+                  >Happy customer
+                </a>
+              </li>
+              <li>
+                <a class="link" href="index.html#contact-section">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <div class="header__pop-ups">
+              <a class="header__shopping-bag-link" href="nutrition.html">
+                <svg class="header__shopping-bag-icon">
+                  <use href="./images/icons.svg#icon-shopping-bag"></use>
+                </svg>
+              </a>
+              <button
+                class="header__button button modal-btn-open"
+                type="button"
+              >
+                Contact us
+              </button>
+              <button class="header__burger menu-btn-open" type="button">
+                <svg class="header__burger-icon">
+                  <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+
+            <!--                        Mobile menu                           -->
+            <div class="mobile-menu">
+              <nav class="mobile-menu__header">
+                <a href="/">
+                  <img
+                    class="header__logo"
+                    src="./images/header-logo.svg"
+                    alt="Logo 'DOGclub'"
+                  />
+                </a>
+                <a href="/">
+                  <img
+                    class="logo-mini logo-mini__burger-menu"
+                    src="./images/logo-mini.svg"
+                    alt="Logo 'DOGclub'"
+                  />
+                </a>
+                <button
+                  class="mobile-menu__btn-close menu-btn-close"
+                  type="button"
+                >
+                  <svg class="mobile-menu__btn-close-icon">
+                    <use href="./images/icons.svg#icon-close-button"></use>
+                  </svg>
+                </button>
+              </nav>
+              <nav>
+                <ul class="mobile-menu__menu">
+                  <li>
+                    <a class="link mobile-menu-link" href="#less-talk-section"
+                      >Less talk</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link mobile-menu-link" href="#services-section">
+                      Services category
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link mobile-menu-link" href="#customer-section"
+                      >Happy customer</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link mobile-menu-link" href="#contact-section"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <address class="socials-address">
+                <a href="#" class="socials-address__link">
+                  <svg class="socials-address__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a href="#" class="socials-address__link">
+                  <svg class="socials-address__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </address>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="nutrition">
+        <div class="container">
+          <div class="nutrition__header">
+            <h2
+              class="section-title section-title--marginless section-title--brand-colored"
+            >
+              Nutrition
+            </h2>
+            <div class="nutrition__sorting-container">
+              <p class="nutrition__sorting-ul-name">Sorting:</p>
+              <div class="nutrition__sorting-list">
+                <button class="nutrition__sorting-item" type="button">
+                  Popularity
+                </button>
+                <button class="nutrition__sorting-item" type="button">
+                  Cheaper first
+                </button>
+                <button class="nutrition__sorting-item" type="button">
+                  More expensive first
+                </button>
+                <button class="nutrition__sorting-item" type="button">
+                  By name
+                </button>
+                <button class="nutrition__sorting-item" type="button">
+                  New ones first
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="nutrition__product-list">
+            <li>
+              <article class="nutrition-card">
+                <img
+                  class="nutrition-card__image"
+                  srcset="
+                    ./images/nutrition-dry-food-avarage.jpg    1x,
+                    ./images/nutrition-dry-food-avarage@2x.jpg 2x
+                  "
+                  src="./images/nutrition-dry-food-avarage.jpg"
+                  alt="Dry food for avarage dogs.jpg"
+                />
+                <div class="nutrition-card__content-container">
+                  <div class="nutrition-card__vendor-code">
+                    <p class="nutrition-card__vendor-code-text">
+                      Vendor code: 37875
+                    </p>
+                    <img
+                      class="nutrition-card__rating-image"
+                      src="./images/nutrition-card-rating-4.png"
+                      alt="Rating 4/5"
+                    />
+                  </div>
+                  <p class="nutrition-card__text">
+                    Dry food for dogs of average breeds Savory 3 kg (turkey and
+                    lamb)
+                  </p>
+                  <div class="nutrition-card__prize">
+                    <p class="nutrition-card__new-prize-text">136.00$</p>
+                    <p class="nutrition-card__old-prize-text">320.43$</p>
+                  </div>
+                  <button
+                    class="button button--centered button--centered-desktop"
+                    type="button"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="nutrition-card">
+                <img
+                  class="nutrition-card__image"
+                  srcset="
+                    ./images/nutrition-dry-food-small.jpg    1x,
+                    ./images/nutrition-dry-food-small@2x.jpg 2x
+                  "
+                  src="./images/nutrition-dry-food-small.jpg"
+                  alt="Dry food for small dogs.jpg"
+                />
+                <div class="nutrition-card__content-container">
+                  <div class="nutrition-card__vendor-code">
+                    <p class="nutrition-card__vendor-code-text">
+                      Vendor code: 34905
+                    </p>
+                    <img
+                      class="nutrition-card__rating-image"
+                      src="./images/nutrition-card-rating-5.png"
+                      alt="Rating 5/5"
+                    />
+                  </div>
+                  <p class="nutrition-card__text">
+                    Dry food for dogs of small breeds Savory 3 kg (lamb)
+                  </p>
+                  <div class="nutrition-card__prize">
+                    <p class="nutrition-card__new-prize-text">140.00$</p>
+                    <p class="nutrition-card__old-prize-text">320.43$</p>
+                  </div>
+                  <button
+                    class="button button--centered button--centered-desktop"
+                    type="button"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="nutrition-card">
+                <img
+                  class="nutrition-card__image"
+                  srcset="
+                    ./images/nutrition-dry-food-all.jpg    1x,
+                    ./images/nutrition-dry-food-all@2x.jpg 2x
+                  "
+                  src="./images/nutrition-dry-food-all.jpg"
+                  alt="Dry food for all dogs.jpg"
+                />
+                <div class="nutrition-card__content-container">
+                  <div class="nutrition-card__vendor-code">
+                    <p class="nutrition-card__vendor-code-text">
+                      Vendor code: 00027
+                    </p>
+                    <img
+                      class="nutrition-card__rating-image"
+                      src="./images/nutrition-card-rating-5.png"
+                      alt="Rating 5/5"
+                    />
+                  </div>
+                  <p class="nutrition-card__text">
+                    Dry food for dogs of all breeds Savory 3 kg (rabbit and
+                    duck)
+                  </p>
+                  <div class="nutrition-card__prize">
+                    <p class="nutrition-card__new-prize-text">136.00$</p>
+                    <p class="nutrition-card__old-prize-text">320.43$</p>
+                  </div>
+                  <button
+                    class="button button--centered button--centered-desktop"
+                    type="button"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="nutrition-card">
+                <img
+                  class="nutrition-card__image"
+                  srcset="
+                    ./images/nutrition-dry-food-all.jpg    1x,
+                    ./images/nutrition-dry-food-all@2x.jpg 2x
+                  "
+                  src="./images/nutrition-dry-food-all.jpg"
+                  alt="Dry food for all dogs.jpg"
+                />
+                <div class="nutrition-card__content-container">
+                  <div class="nutrition-card__vendor-code">
+                    <p class="nutrition-card__vendor-code-text">
+                      Vendor code: 00028
+                    </p>
+                    <img
+                      class="nutrition-card__rating-image"
+                      src="./images/nutrition-card-rating-5.png"
+                      alt="Rating 5/5"
+                    />
+                  </div>
+                  <p class="nutrition-card__text">
+                    Dry food for dogs of all breeds Savory 5 kg (rabbit and
+                    duck)
+                  </p>
+                  <div class="nutrition-card__prize">
+                    <p class="nutrition-card__new-prize-text">346.00$</p>
+                    <p class="nutrition-card__old-prize-text">450.43$</p>
+                  </div>
+                  <button
+                    class="button button--centered button--centered-desktop"
+                    type="button"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="nutrition-card">
+                <img
+                  class="nutrition-card__image"
+                  srcset="
+                    ./images/nutrition-dry-food-small.jpg    1x,
+                    ./images/nutrition-dry-food-small@2x.jpg 2x
+                  "
+                  src="./images/nutrition-dry-food-small.jpg"
+                  alt="Dry food for small dogs.jpg"
+                />
+                <div class="nutrition-card__content-container">
+                  <div class="nutrition-card__vendor-code">
+                    <p class="nutrition-card__vendor-code-text">
+                      Vendor code: 34905
+                    </p>
+                    <img
+                      class="nutrition-card__rating-image"
+                      src="./images/nutrition-card-rating-5.png"
+                      alt="Rating 5/5"
+                    />
+                  </div>
+                  <p class="nutrition-card__text">
+                    Dry food for dogs of small breeds Savory 3 kg (lamb)
+                  </p>
+                  <div class="nutrition-card__prize">
+                    <p class="nutrition-card__new-prize-text">140.00$</p>
+                    <p class="nutrition-card__old-prize-text">320.43$</p>
+                  </div>
+                  <button
+                    class="button button--centered button--centered-desktop"
+                    type="button"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="nutrition-card">
+                <img
+                  class="nutrition-card__image"
+                  srcset="
+                    ./images/nutrition-dry-food-all.jpg    1x,
+                    ./images/nutrition-dry-food-all@2x.jpg 2x
+                  "
+                  src="./images/nutrition-dry-food-all.jpg"
+                  alt="Dry food for all dogs.jpg"
+                />
+                <div class="nutrition-card__content-container">
+                  <div class="nutrition-card__vendor-code">
+                    <p class="nutrition-card__vendor-code-text">
+                      Vendor code: 00027
+                    </p>
+                    <img
+                      class="nutrition-card__rating-image"
+                      src="./images/nutrition-card-rating-5.png"
+                      alt="Rating 5/5"
+                    />
+                  </div>
+                  <p class="nutrition-card__text">
+                    Dry food for dogs of all breeds Savory 3 kg (rabbit and
+                    duck)
+                  </p>
+                  <div class="nutrition-card__prize">
+                    <p class="nutrition-card__new-prize-text">136.00$</p>
+                    <p class="nutrition-card__old-prize-text">320.43$</p>
+                  </div>
+                  <button
+                    class="button button--centered button--centered-desktop"
+                    type="button"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="nutrition-card">
+                <img
+                  class="nutrition-card__image"
+                  srcset="
+                    ./images/nutrition-dry-food-avarage.jpg    1x,
+                    ./images/nutrition-dry-food-avarage@2x.jpg 2x
+                  "
+                  src="./images/nutrition-dry-food-avarage.jpg"
+                  alt="Dry food for avarage dogs.jpg"
+                />
+                <div class="nutrition-card__content-container">
+                  <div class="nutrition-card__vendor-code">
+                    <p class="nutrition-card__vendor-code-text">
+                      Vendor code: 37875
+                    </p>
+                    <img
+                      class="nutrition-card__rating-image"
+                      src="./images/nutrition-card-rating-4.png"
+                      alt="Rating 4/5"
+                    />
+                  </div>
+                  <p class="nutrition-card__text">
+                    Dry food for dogs of average breeds Savory 3 kg (turkey and
+                    lamb)
+                  </p>
+                  <div class="nutrition-card__prize">
+                    <p class="nutrition-card__new-prize-text">136.00$</p>
+                    <p class="nutrition-card__old-prize-text">320.43$</p>
+                  </div>
+                  <button
+                    class="button button--centered button--centered-desktop"
+                    type="button"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="nutrition-card">
+                <img
+                  class="nutrition-card__image"
+                  srcset="
+                    ./images/nutrition-dry-food-all.jpg    1x,
+                    ./images/nutrition-dry-food-all@2x.jpg 2x
+                  "
+                  src="./images/nutrition-dry-food-all.jpg"
+                  alt="Dry food for all dogs.jpg"
+                />
+                <div class="nutrition-card__content-container">
+                  <div class="nutrition-card__vendor-code">
+                    <p class="nutrition-card__vendor-code-text">
+                      Vendor code: 00028
+                    </p>
+                    <img
+                      class="nutrition-card__rating-image"
+                      src="./images/nutrition-card-rating-5.png"
+                      alt="Rating 5/5"
+                    />
+                  </div>
+                  <p class="nutrition-card__text">
+                    Dry food for dogs of all breeds Savory 5 kg (rabbit and
+                    duck)
+                  </p>
+                  <div class="nutrition-card__prize">
+                    <p class="nutrition-card__new-prize-text">346.00$</p>
+                    <p class="nutrition-card__old-prize-text">450.43$</p>
+                  </div>
+                  <button
+                    class="button button--centered button--centered-desktop"
+                    type="button"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__social">
+            <nav class="footer__nav">
+              <a href="/">
+                <img
+                  class="logo-mini"
+                  src="./images/logo-mini.svg"
+                  alt="Logo 'DOGclub'"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer__logo"
+                  src="./images/footer-logo.svg"
+                  alt="Logo 'DOGclub'"
+              /></a>
+            </nav>
+            <address class="socials-address socials-address--hidden">
+              <a href="#" class="socials-address__link">
+                <svg class="socials-address__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#" class="socials-address__link">
+                <svg class="socials-address__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </address>
+          </div>
+
+          <nav>
+            <ul class="footer__menu">
+              <li>
+                <a class="link" href="index.html#less-talk-section"
+                  >Less talk
+                </a>
+              </li>
+              <li>
+                <a class="link" href="index.html#services-section"
+                  >Services category
+                </a>
+              </li>
+              <li>
+                <a class="link" href="index.html#customer-section"
+                  >Happy customer
+                </a>
+              </li>
+              <li>
+                <a class="link" href="index.html#contact-section">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="socials-address socials-address--mobile">
+            <a href="#" class="socials-address__link">
+              <svg class="socials-address__icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="socials-address__link">
+              <svg class="socials-address__icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </address>
+
+          <div class="footer__form-container">
+            <form name="modal-form" autocomplete="off">
+              <div class="input input--mini">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-modal-your-email"></use>
+                </svg>
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-email">
+                    Your email
+                  </label>
+                  <input
+                    class="input__control input__control--mini"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Your email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input input--mini">
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-name">
+                    Your cmc
+                  </label>
+                  <input
+                    class="input__control input__control--mini input__control--no-icon"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Your cmc"
+                    minlength="2"
+                    maxlength="20"
+                    required
+                  />
+                </div>
+              </div>
+
+              <button
+                class="button button__footer-button button--centered-desktop"
+                type="submit"
+              >
+                Contact us
+              </button>
+
+              <div class="checkbox">
+                <input
+                  class="checkbox__input visually-hidden"
+                  type="checkbox"
+                  id="footer-terms-conditions"
+                  name="terms-conditions"
+                  required
+                />
+                <label class="checkbox__label" for="footer-terms-conditions">
+                  I agree to the privacy policy
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--                    Modal window                      -->
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="section-title section-title--modal">
+          Our experts will take care of your friend
+        </h2>
+        <p class="modal__comment-text">
+          Fill out the form so we can contact you!
+        </p>
+
+        <form name="modal-form" autocomplete="off">
+          <div class="input">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-modal-your-name"></use>
+            </svg>
+            <div class="input__text">
+              <label class="input__label visually-hidden" for="user-name">
+                Your name
+              </label>
+              <input
+                class="input__control"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Your name"
+                minlength="2"
+                maxlength="20"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-modal-pet-name"></use>
+            </svg>
+            <div class="input__text">
+              <label class="input__label visually-hidden" for="user-name">
+                Pet name
+              </label>
+              <input
+                class="input__control"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Pet name"
+                minlength="2"
+                maxlength="20"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-modal-your-phone"></use>
+            </svg>
+            <div class="input__text">
+              <label class="input__label visually-hidden" for="user-tel">
+                Your phone
+              </label>
+              <input
+                class="input__control"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="Your phone"
+                pattern="^\+[0-9]{12}"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-modal-your-email"></use>
+            </svg>
+            <div class="input__text">
+              <label class="input__label visually-hidden" for="user-email">
+                Your email
+              </label>
+              <input
+                class="input__control"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Your email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+            </div>
+          </div>
+
+          <button
+            class="button button--centered button--centered-desktop"
+            type="submit"
+          >
+            Contact us
+          </button>
+
+          <div class="checkbox">
+            <input
+              class="checkbox__input visually-hidden"
+              type="checkbox"
+              id="modal-terms-conditions"
+              name="terms-conditions"
+              required
+            />
+            <label class="checkbox__label" for="modal-terms-conditions">
+              I agree to the privacy policy
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

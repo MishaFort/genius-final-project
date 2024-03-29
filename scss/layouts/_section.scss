@@ -51,4 +51,12 @@
       margin-bottom: 16px;
     }
   }
+
+  &--marginless {
+    margin: 0;
+  }
+
+  &--brand-colored {
+    color: var(--color-brand-normal);
+  }
 }

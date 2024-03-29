@@ -5,12 +5,12 @@
   @media screen and (min-width: $bp-desktop) {
     padding-top: 212px;
     padding-bottom: 60px;
+    overflow: hidden;
   }
 
   @media screen and (min-width: $bp-max) {
     max-width: 1440px;
     margin: 0 auto;
-    overflow: hidden;
   }
 
   &::before,

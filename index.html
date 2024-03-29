@@ -14,7 +14,7 @@
   <body>
     <!--                    ХЕДЕР                      -->
     <header class="header">
-      <div class="container">
+      <div class="container background background__main">
         <div class="header__container">
           <nav class="header__nav">
             <a href="/">
@@ -43,12 +43,12 @@
             </ul>
           </nav>
           <nav>
-            <div class="header__buttons">
-              <button class="header__shopping-bag-button" type="button">
+            <div class="header__pop-ups">
+              <a class="header__shopping-bag-link" href="nutrition.html">
                 <svg class="header__shopping-bag-icon">
                   <use href="./images/icons.svg#icon-shopping-bag"></use>
                 </svg>
-              </button>
+              </a>
               <button
                 class="header__button button modal-btn-open"
                 type="button"
@@ -91,18 +91,24 @@
               <nav>
                 <ul class="mobile-menu__menu">
                   <li>
-                    <a class="link" href="#less-talk-section">Less talk</a>
+                    <a class="link mobile-menu-link" href="#less-talk-section"
+                      >Less talk</a
+                    >
                   </li>
                   <li>
-                    <a class="link" href="#services-section">
+                    <a class="link mobile-menu-link" href="#services-section">
                       Services category
                     </a>
                   </li>
                   <li>
-                    <a class="link" href="#customer-section">Happy customer</a>
+                    <a class="link mobile-menu-link" href="#customer-section"
+                      >Happy customer</a
+                    >
                   </li>
                   <li>
-                    <a class="link" href="#contact-section">Contact</a>
+                    <a class="link mobile-menu-link" href="#contact-section"
+                      >Contact</a
+                    >
                   </li>
                 </ul>
               </nav>
@@ -302,6 +308,10 @@
                   <article class="customer-card">
                     <img
                       class="customer-card__image"
+                      srcset="
+                        ./images/customer-christin-tom.jpg    1x,
+                        ./images/customer-christin-tom@2x.jpg 2x
+                      "
                       src="./images/customer-christin-tom.jpg"
                       alt="Customer Christin & Tom"
                     />
@@ -322,6 +332,10 @@
                   <article class="customer-card">
                     <img
                       class="customer-card__image"
+                      srcset="
+                        ./images/customer-anna-tobby.jpg    1x,
+                        ./images/customer-anna-tobby@2x.jpg 2x
+                      "
                       src="./images/customer-anna-tobby.jpg"
                       alt="Customer Christin & Tom"
                     />
@@ -342,6 +356,10 @@
                   <article class="customer-card">
                     <img
                       class="customer-card__image"
+                      srcset="
+                        ./images/customer-sindy-kitch.jpg    1x,
+                        ./images/customer-sindy-kitch@2x.jpg 2x
+                      "
                       src="./images/customer-sindy-kitch.jpg"
                       alt="Customer Christin & Tom"
                     />
@@ -363,12 +381,18 @@
                   <article class="customer-card">
                     <img
                       class="customer-card__image"
-                      src="./images/customer-fort-1.jpg"
-                      alt="Misha Fort"
+                      srcset="
+                        ./images/customer-christin-tom.jpg    1x,
+                        ./images/customer-christin-tom@2x.jpg 2x
+                      "
+                      src="./images/customer-christin-tom.jpg"
+                      alt="Customer Christin & Tom"
                     />
                     <div class="customer-card__content-container">
-                      <h3 class="customer-card__title">Misha & Astonishment</h3>
-                      <p class="customer-card__text">Я В ШОКЕ</p>
+                      <h3 class="customer-card__title">Christin & Tom</h3>
+                      <p class="customer-card__text">
+                        Love the overall workout experience!
+                      </p>
                       <img
                         class="customer-card__rating-image"
                         src="./images/customer-card-rating-5.png"
@@ -381,16 +405,22 @@
                   <article class="customer-card">
                     <img
                       class="customer-card__image"
-                      src="./images/customer-fort-2.jpg"
-                      alt="Misha Fort"
+                      srcset="
+                        ./images/customer-anna-tobby.jpg    1x,
+                        ./images/customer-anna-tobby@2x.jpg 2x
+                      "
+                      src="./images/customer-anna-tobby.jpg"
+                      alt="Customer Christin & Tom"
                     />
                     <div class="customer-card__content-container">
-                      <h3 class="customer-card__title">Misha & Hunter</h3>
-                      <p class="customer-card__text">Я ТУТ ПРИТАИЛСЯ</p>
+                      <h3 class="customer-card__title">Anna & Tobby</h3>
+                      <p class="customer-card__text">
+                        Amazing Products & Delivery on time.
+                      </p>
                       <img
                         class="customer-card__rating-image"
-                        src="./images/customer-card-rating-5.png"
-                        alt="Rating 5/5"
+                        src="./images/customer-card-rating-4.png"
+                        alt="Rating 4/5"
                       />
                     </div>
                   </article>
@@ -399,12 +429,18 @@
                   <article class="customer-card">
                     <img
                       class="customer-card__image"
-                      src="./images/customer-fort-3.jpg"
-                      alt="Misha Fort"
+                      srcset="
+                        ./images/customer-sindy-kitch.jpg    1x,
+                        ./images/customer-sindy-kitch@2x.jpg 2x
+                      "
+                      src="./images/customer-sindy-kitch.jpg"
+                      alt="Customer Christin & Tom"
                     />
                     <div class="customer-card__content-container">
-                      <h3 class="customer-card__title">Misha & Joyfulness</h3>
-                      <p class="customer-card__text">Я В ПОРЯДКЕ</p>
+                      <h3 class="customer-card__title">Sindy & Kitch</h3>
+                      <p class="customer-card__text">
+                        Great job with the trainer!
+                      </p>
                       <img
                         class="customer-card__rating-image"
                         src="./images/customer-card-rating-5.png"
@@ -414,6 +450,7 @@
                   </article>
                 </li>
               </ul>
+
               <div class="pagination">
                 <span class="pagination__button"></span>
                 <span class="pagination__button"></span>
@@ -432,7 +469,6 @@
         </div>
       </section>
       <!--                   Section 5                       -->
-      <!--    ФОН СДЕЛАТЬ ЕЩЕ НАДО (но разберись сначало)    -->
       <section class="contact-section" id="contact-section">
         <div class="container">
           <div class="contact-section__container">
@@ -627,14 +663,17 @@
                   <use href="./images/icons.svg#icon-modal-your-email"></use>
                 </svg>
                 <div class="input__text">
-                  <label class="input__label visually-hidden" for="user-email">
+                  <label
+                    class="input__label visually-hidden"
+                    for="user-email-footer"
+                  >
                     Your email
                   </label>
                   <input
                     class="input__control input__control--mini"
                     type="email"
                     name="user-email"
-                    id="user-email"
+                    id="user-email-footer"
                     placeholder="Your email"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                     required
@@ -812,6 +851,5 @@
     <script src="./js/services-slider.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/view-port-calc.js"></script>
   </body>
 </html>

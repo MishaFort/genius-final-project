@@ -4,19 +4,6 @@
   margin: 0 auto;
   padding: 32px 8px 0 8px;
 
-  //fix to full size
-  &::before {
-    @media screen and (min-width: $bp-max) {
-      position: absolute;
-      content: '';
-      width: 1440px;
-      height: 2722px;
-      top: 43px;
-      background-image: url('../images/body-background.png');
-      z-index: -1;
-    }
-  }
-
   &__container {
     display: flex;
     align-items: center;
@@ -47,34 +34,31 @@
     }
   }
 
-  &__buttons {
+  &__pop-ups {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 24px;
-  }
-
-  &__shopping-bag-button {
-    width: 24px;
-    height: 24px;
-    fill: var(--color-brand-normal);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-      fill: var(--color-brand-light);
-    }
+    gap: 16px;
 
     @media screen and (min-width: $bp-tablet) {
-      width: 40px;
-      height: 40px;
+      gap: 24px;
     }
+  }
+
+  &__shopping-bag-link {
+    display: flex;
+    justify-content: center;
   }
 
   &__shopping-bag-icon {
     width: 24px;
     height: 24px;
+    fill: var(--color-brand-normal);
+    cursor: pointer;
+
+    &:hover {
+      fill: var(--color-brand-light);
+    }
 
     @media screen and (min-width: $bp-tablet) {
       width: 40px;
