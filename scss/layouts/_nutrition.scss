@@ -2,7 +2,6 @@
   &__header {
     display: flex;
     justify-content: space-between;
-    /*  align-items: center; */
     padding: 72px 0;
   }
 
@@ -53,12 +52,5 @@
       color: var(--color-primary-light);
       background-color: var(--color-brand-normal);
     }
-  }
-
-  &__product-list {
-    display: flex;
-    gap: 28px;
-    flex-wrap: wrap;
-    padding-bottom: 126px;
   }
 }
