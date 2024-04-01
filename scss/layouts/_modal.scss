@@ -36,7 +36,7 @@
     right: 40px;
     width: 32px;
     height: 32px;
-    fill: #31261a; /* DO I NEED TO ADD THIS AT TOP? */
+    fill: var(--color-icon-dark);
     background-color: transparent;
     border: none;
     padding: 8px;

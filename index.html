@@ -497,6 +497,7 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Your name"
+                    pattern="^[A-Za-z]+\s[A-Za-z]+$"
                     minlength="2"
                     maxlength="20"
                     required
@@ -539,7 +540,9 @@
                     name="user-tel"
                     id="user-tel"
                     placeholder="Your phone"
-                    pattern="^\+[0-9]{12}"
+                    pattern="^\+380+[0-9]{9}"
+                    minlength="13"
+                    maxlength="13"
                     required
                   />
                 </div>
@@ -572,9 +575,6 @@
                 Contact us
               </button>
 
-              <!--
-                ЧЕКБОКС НА ВСЮ ДЛИННУ! потом
-              -->
               <div class="checkbox">
                 <input
                   class="checkbox__input visually-hidden"
@@ -692,6 +692,7 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Your cmc"
+                    pattern="^[A-Za-z]+\s[A-Za-z]+$"
                     minlength="2"
                     maxlength="20"
                     required
@@ -754,6 +755,7 @@
                 name="user-name"
                 id="user-name"
                 placeholder="Your name"
+                pattern="^[A-Za-z]+\s[A-Za-z]+$"
                 minlength="2"
                 maxlength="20"
                 required
@@ -762,7 +764,7 @@
           </div>
 
           <div class="input">
-            <svg width="32" height="32">
+            <svg class="input__icon">
               <use href="./images/icons.svg#icon-modal-pet-name"></use>
             </svg>
             <div class="input__text">
@@ -783,27 +785,29 @@
           </div>
 
           <div class="input">
-            <svg width="32" height="32">
+            <svg class="input__icon">
               <use href="./images/icons.svg#icon-modal-your-phone"></use>
             </svg>
             <div class="input__text">
-              <label class="input__label visually-hidden" for="user-tel">
+              <label class="input__label visually-hidden" for="user-tel-modal">
                 Your phone
               </label>
               <input
                 class="input__control"
                 type="tel"
-                name="user-tel"
-                id="user-tel"
+                name="user-tel-modal"
+                id="user-tel-modal"
                 placeholder="Your phone"
-                pattern="^\+[0-9]{12}"
+                pattern="^\+380+[0-9]{9}"
+                minlength="13"
+                maxlength="13"
                 required
               />
             </div>
           </div>
 
           <div class="input">
-            <svg width="32" height="32">
+            <svg class="input__icon">
               <use href="./images/icons.svg#icon-modal-your-email"></use>
             </svg>
             <div class="input__text">
@@ -851,5 +855,6 @@
     <script src="./js/services-slider.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/telephone-form.js"></script>
   </body>
 </html>

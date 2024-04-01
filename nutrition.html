@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOGclub Nutrition</title>
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!--     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    /> -->
   </head>
 
   <body>
@@ -101,22 +97,31 @@
               <nav>
                 <ul class="mobile-menu__menu">
                   <li>
-                    <a class="link mobile-menu-link" href="#less-talk-section"
+                    <a
+                      class="link mobile-menu-link"
+                      href="index.html#less-talk-section"
                       >Less talk
                     </a>
                   </li>
                   <li>
-                    <a class="link mobile-menu-link" href="#services-section">
+                    <a
+                      class="link mobile-menu-link"
+                      href="index.html#services-section"
+                    >
                       Services category
                     </a>
                   </li>
                   <li>
-                    <a class="link mobile-menu-link" href="#customer-section"
+                    <a
+                      class="link mobile-menu-link"
+                      href="index.html#customer-section"
                       >Happy customer
                     </a>
                   </li>
                   <li>
-                    <a class="link mobile-menu-link" href="#contact-section"
+                    <a
+                      class="link mobile-menu-link"
+                      href="index.html#contact-section"
                       >Contact
                     </a>
                   </li>
@@ -149,7 +154,19 @@
             >
               Nutrition
             </h2>
-            <div class="nutrition__sorting-container">
+            <div class="nutrition__sorting-container-mobile">
+              <button class="nutrition__sorting-button">
+                <svg
+                  width="24"
+                  height="24"
+                  class="nutrition__sorting-arrows-icon"
+                >
+                  <use href="./images/icons.svg#icon-sorting-arrows"></use>
+                </svg>
+                <p class="nutrition__sorting-ul-name">Popularity</p>
+              </button>
+            </div>
+            <div class="nutrition__sorting-container-desktop">
               <p class="nutrition__sorting-ul-name">Sorting:</p>
               <div class="nutrition__sorting-list">
                 <button class="nutrition__sorting-item" type="button">
@@ -170,7 +187,7 @@
               </div>
             </div>
           </div>
-          <div id="page-1" class="page">
+          <div id="page-1" class="page-grid">
             <article class="nutrition-card">
               <img
                 class="nutrition-card__image"
@@ -470,7 +487,7 @@
             </article>
           </div>
 
-          <div id="page-2" class="page">
+          <div id="page-2" class="page-grid">
             <article class="nutrition-card">
               <img
                 class="nutrition-card__image"
@@ -776,7 +793,7 @@
             </article>
           </div>
 
-          <div id="page-3" class="page">
+          <div id="page-3" class="page-grid">
             <article class="nutrition-card">
               <img
                 class="nutrition-card__image"
@@ -1074,7 +1091,7 @@
             </article>
           </div>
 
-          <div id="page-4" class="page">
+          <div id="page-4" class="page-grid">
             <article class="nutrition-card">
               <img
                 class="nutrition-card__image"
@@ -1372,7 +1389,7 @@
             </article>
           </div>
 
-          <div id="page-5" class="page">
+          <div id="page-5" class="page-grid">
             <article class="nutrition-card">
               <img
                 class="nutrition-card__image"
@@ -1672,7 +1689,7 @@
             </article>
           </div>
 
-          <div id="page-6" class="page">
+          <div id="page-6" class="page-grid">
             <article class="nutrition-card">
               <img
                 class="nutrition-card__image"
@@ -1978,7 +1995,7 @@
             </article>
           </div>
 
-          <div id="page-7" class="page">
+          <div id="page-7" class="page-grid">
             <article class="nutrition-card">
               <img
                 class="nutrition-card__image"
@@ -2276,7 +2293,7 @@
             </article>
           </div>
 
-          <div id="page-8" class="page">
+          <div id="page-8" class="page-grid">
             <article class="nutrition-card">
               <img
                 class="nutrition-card__image"
@@ -2574,9 +2591,12 @@
             </article>
           </div>
 
-          <div class="navigation">
-            <button onclick="showPage(prevPage)" class="navigation__button">
-              <div class="navigation__svg-container">
+          <div class="page-navigation">
+            <button
+              onclick="showPage(prevPage)"
+              class="page-navigation__button"
+            >
+              <div class="page-navigation__svg-container">
                 <svg width="14" height="14">
                   <use
                     href="./images/icons.svg#icon-page-navigation-prev"
@@ -2584,16 +2604,35 @@
                 </svg>
               </div>
             </button>
-            <button onclick="showPage(1)" class="navigation__button">1</button>
-            <button onclick="showPage(2)" class="navigation__button">2</button>
-            <button onclick="showPage(3)" class="navigation__button">3</button>
-            <button onclick="showPage(4)" class="navigation__button">4</button>
-            <button onclick="showPage(5)" class="navigation__button">5</button>
-            <button onclick="showPage(6)" class="navigation__button">6</button>
-            <button onclick="showPage(7)" class="navigation__button">7</button>
-            <button onclick="showPage(8)" class="navigation__button">8</button>
-            <button onclick="showPage(nextPage)" class="navigation__button">
-              <div class="navigation__svg-container">
+            <button onclick="showPage(1)" class="page-navigation__button">
+              1
+            </button>
+            <button onclick="showPage(2)" class="page-navigation__button">
+              2
+            </button>
+            <button onclick="showPage(3)" class="page-navigation__button">
+              3
+            </button>
+            <button onclick="showPage(4)" class="page-navigation__button">
+              4
+            </button>
+            <button onclick="showPage(5)" class="page-navigation__button">
+              5
+            </button>
+            <button onclick="showPage(6)" class="page-navigation__button">
+              6
+            </button>
+            <button onclick="showPage(7)" class="page-navigation__button">
+              7
+            </button>
+            <button onclick="showPage(8)" class="page-navigation__button">
+              8
+            </button>
+            <button
+              onclick="showPage(nextPage)"
+              class="page-navigation__button"
+            >
+              <div class="page-navigation__svg-container">
                 <svg width="14" height="14">
                   <use
                     href="./images/icons.svg#icon-page-navigation-next"
@@ -2769,6 +2808,7 @@
                 name="user-name"
                 id="user-name"
                 placeholder="Your name"
+                pattern="^[A-Za-z]+\s[A-Za-z]+$"
                 minlength="2"
                 maxlength="20"
                 required
@@ -2777,7 +2817,7 @@
           </div>
 
           <div class="input">
-            <svg width="32" height="32">
+            <svg class="input__icon">
               <use href="./images/icons.svg#icon-modal-pet-name"></use>
             </svg>
             <div class="input__text">
@@ -2798,27 +2838,29 @@
           </div>
 
           <div class="input">
-            <svg width="32" height="32">
+            <svg class="input__icon">
               <use href="./images/icons.svg#icon-modal-your-phone"></use>
             </svg>
             <div class="input__text">
-              <label class="input__label visually-hidden" for="user-tel">
+              <label class="input__label visually-hidden" for="user-tel-modal">
                 Your phone
               </label>
               <input
                 class="input__control"
                 type="tel"
-                name="user-tel"
-                id="user-tel"
+                name="user-tel-modal"
+                id="user-tel-modal"
                 placeholder="Your phone"
-                pattern="^\+[0-9]{12}"
+                pattern="^\+380+[0-9]{9}"
+                minlength="13"
+                maxlength="13"
                 required
               />
             </div>
           </div>
 
           <div class="input">
-            <svg width="32" height="32">
+            <svg class="input__icon">
               <use href="./images/icons.svg#icon-modal-your-email"></use>
             </svg>
             <div class="input__text">
@@ -2863,5 +2905,6 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/page-nav.js"></script>
+    <script src="./js/telephone-form.js"></script>
   </body>
 </html>

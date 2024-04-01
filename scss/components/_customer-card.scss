@@ -6,6 +6,10 @@
   height: 456px;
   transition: transform 0.2s;
 
+  &:hover {
+    transform: scale(1.02);
+  }
+
   &__image {
     position: absolute;
     top: 0;

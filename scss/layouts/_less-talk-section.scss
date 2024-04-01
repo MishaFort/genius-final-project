@@ -65,7 +65,6 @@
 
     &.first-paw {
       position: absolute;
-      /* bottom: 134px; */
       top: 222px;
       left: 52px;
       transform: rotate(141.94deg);
@@ -158,14 +157,12 @@
 
     &.bowl {
       position: absolute;
-      /*  bottom: -100px; */
       top: 440px;
       left: 215px;
     }
   }
 
   &__video-button {
-    /* НАЖАТЬ МОЖНО И РЯДОМ, ЧЕКНИ ПОТОМ МОЖНО ЛИ ИСПРАВИТЬ */
     position: absolute;
     top: -33px;
     right: 50px;

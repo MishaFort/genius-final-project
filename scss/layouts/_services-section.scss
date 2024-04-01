@@ -113,5 +113,11 @@
     padding: 0;
     background-color: transparent;
     border: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
