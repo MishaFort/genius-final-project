@@ -10,3 +10,10 @@ modalBtnOpen.addEventListener('click', toggleModal);
 modalBtnClose.addEventListener('click', toggleModal);
 
 /* modalBtnOpenFooter.addEventListener("click", toggleModal); */
+
+// Close the modal window by clicking outside of it
+document.addEventListener('click', event => {
+  if (event.target === modal) {
+    toggleModal();
+  }
+});
