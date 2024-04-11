@@ -55,6 +55,7 @@
     height: 24px;
     fill: var(--color-brand-normal);
     cursor: pointer;
+    transition: fill 0.2s;
 
     &:hover {
       fill: var(--color-brand-light);
@@ -81,6 +82,7 @@
     background-color: transparent;
     border: none;
     fill: var(--color-brand-normal);
+    transition: fill 0.2s;
 
     &:hover {
       fill: var(--color-brand-light);

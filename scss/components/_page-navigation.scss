@@ -18,14 +18,14 @@
     cursor: pointer;
     transition: box-shadow 0.2s;
 
+    &:hover {
+      box-shadow: 0px 8px 16px 0px var(--color-shadow-normal);
+    }
+
     &--active {
       color: var(--color-primary-light);
       background-color: var(--color-brand-normal);
       border-radius: 2px;
-    }
-
-    &:hover {
-      box-shadow: 0px 8px 16px 0px var(--color-shadow-normal);
     }
 
     &.disabled {

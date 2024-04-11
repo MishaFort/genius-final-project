@@ -11,14 +11,14 @@
   cursor: pointer;
   transition: background-color 0.2s;
 
+  &:hover {
+    background-color: var(--color-brand-light);
+  }
+
   @media screen and (min-width: $bp-desktop) {
     padding: 16px 32px;
     font-size: 18px;
     border-radius: 8px;
-  }
-
-  &:hover {
-    background-color: var(--color-brand-light);
   }
 
   &__footer-button {
