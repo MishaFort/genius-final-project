@@ -58,12 +58,24 @@
     background-image: url('../images/hero-background-elements-mini.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-background-elements-mini@2x.png');
+    }
 
     @media screen and (min-width: $bp-tablet) {
       width: 300px;
       height: 88px;
       background-image: url('../images/hero-background-elements-tablet.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/hero-background-elements-tablet@2x.png');
+      }
     }
 
     @media screen and (min-width: $bp-desktop) {
@@ -116,6 +128,13 @@
         background-image: url('../images/hero-background-elements.png');
         background-repeat: no-repeat;
         content: '';
+
+        @media screen and (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/hero-background-elements@2x.png');
+          background-size: cover;
+        }
       }
     }
   }

@@ -54,7 +54,12 @@ ul {
 }
 
 li {
-  font-size: 0;
+  font-size: 16px;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 18px;
+    line-height: 1.35;
+  }
 }
 
 button {

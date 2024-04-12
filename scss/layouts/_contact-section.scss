@@ -55,6 +55,13 @@
       left: calc(-354px - (100vw - 1200px) * 0.175);
       background-image: url('../images/contact-walking-dog-before.png');
 
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/contact-walking-dog-before@2x.png');
+        background-size: contain;
+      }
+
       @media screen and (min-width: $bp-max) {
         left: -396px;
       }
@@ -66,6 +73,13 @@
       top: -137px;
       right: calc(-275px - (100vw - 1200px) * 0.5);
       background-image: url('../images/contact-asking-dog-after.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/contact-asking-dog-after@2x.png');
+        background-size: contain;
+      }
 
       @media screen and (min-width: $bp-max) {
         right: -396px;

@@ -37,6 +37,12 @@
       background-position: center;
       content: '';
 
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/footer-dog@2x.png');
+      }
+
       @media screen and (min-width: $bp-desktop) {
         width: 292px;
         height: 305px;
