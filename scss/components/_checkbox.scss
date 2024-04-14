@@ -35,7 +35,9 @@
   }
 
   &__input:checked + &__label::before {
-    content: '✔';
-    color: var(--color-primary-dark);
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url('/images/check.svg');
   }
 }
